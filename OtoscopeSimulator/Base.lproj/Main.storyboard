@@ -334,8 +334,8 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="sxz-Ur-wM6"/>
-                                <exclude reference="zwH-dJ-zGl"/>
                                 <exclude reference="OVd-MB-Lr1"/>
+                                <exclude reference="zwH-dJ-zGl"/>
                             </mask>
                         </variation>
                     </view>
@@ -457,13 +457,13 @@ here</string>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Lcr-0a-D9I"/>
                                 <exclude reference="62E-b3-egS"/>
                                 <exclude reference="PTs-0R-5uM"/>
                                 <exclude reference="gaz-K4-Vu5"/>
                                 <exclude reference="v4B-XX-pp7"/>
-                                <exclude reference="Lcr-0a-D9I"/>
-                                <exclude reference="GbR-Pa-Lf3"/>
                                 <exclude reference="LP9-RN-qKl"/>
+                                <exclude reference="GbR-Pa-Lf3"/>
                             </mask>
                         </variation>
                     </view>

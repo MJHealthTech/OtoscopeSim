@@ -16,10 +16,24 @@
 		A14FE53B1C5CD9C900C55D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5391C5CD9C900C55D0F /* LaunchScreen.storyboard */; };
 		A1850A501C78C71800D420E1 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1850A4F1C78C71800D420E1 /* Condition.swift */; };
 		A1850A521C78CC8A00D420E1 /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1850A511C78CC8A00D420E1 /* Conditions.swift */; };
+		A188DAEB1D89691E00F29A78 /* MailChimpListMemberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAEA1D89691E00F29A78 /* MailChimpListMemberTests.swift */; };
+		A188DAEF1D89A3C100F29A78 /* MailChimpListEntry.txt in Resources */ = {isa = PBXBuildFile; fileRef = A188DAEE1D89A3C100F29A78 /* MailChimpListEntry.txt */; };
+		A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */; };
+		A188DAF71D8ABB9400F29A78 /* MD5DigesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */; };
 		A1B06F201D8044B100DB4F6F /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */; };
 		A1B06F221D80484600DB4F6F /* LearnDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */; };
 		A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A188DAE51D8968B800F29A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14FE5251C5CD9C900C55D0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14FE52C1C5CD9C900C55D0F;
+			remoteInfo = OtoscopeSimulator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCellView.swift; sourceTree = "<group>"; };
@@ -33,6 +47,13 @@
 		A14FE53C1C5CD9C900C55D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1850A4F1C78C71800D420E1 /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Model/Condition.swift; sourceTree = "<group>"; };
 		A1850A511C78CC8A00D420E1 /* Conditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conditions.swift; path = Model/Conditions.swift; sourceTree = "<group>"; };
+		A188DAE01D8968B800F29A78 /* OtoscopeSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtoscopeSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A188DAE41D8968B800F29A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A188DAEA1D89691E00F29A78 /* MailChimpListMemberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMemberTests.swift; sourceTree = "<group>"; };
+		A188DAEE1D89A3C100F29A78 /* MailChimpListEntry.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MailChimpListEntry.txt; sourceTree = "<group>"; };
+		A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MD5Digester.swift; path = Services/MD5Digester.swift; sourceTree = "<group>"; };
+		A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OtoscopeSimulator-Bridging-Header.h"; sourceTree = "<group>"; };
+		A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5DigesterTests.swift; sourceTree = "<group>"; };
 		A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
 		A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnDetailViewController.swift; sourceTree = "<group>"; };
 		A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockScreenViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +67,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A188DADD1D8968B800F29A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A14FE52F1C5CD9C900C55D0F /* OtoscopeSimulator */,
+				A188DAE11D8968B800F29A78 /* OtoscopeSimulatorTests */,
 				A14FE52E1C5CD9C900C55D0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				A14FE52D1C5CD9C900C55D0F /* OtoscopeSimulator.app */,
+				A188DAE01D8968B800F29A78 /* OtoscopeSimulatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +98,7 @@
 		A14FE52F1C5CD9C900C55D0F /* OtoscopeSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				A188DAF01D8AB9BB00F29A78 /* Services */,
 				A1850A4E1C78C6BC00D420E1 /* Model */,
 				A14FE5301C5CD9C900C55D0F /* AppDelegate.swift */,
 				A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */,
@@ -93,6 +124,26 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		A188DAE11D8968B800F29A78 /* OtoscopeSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A188DAE41D8968B800F29A78 /* Info.plist */,
+				A188DAEA1D89691E00F29A78 /* MailChimpListMemberTests.swift */,
+				A188DAEE1D89A3C100F29A78 /* MailChimpListEntry.txt */,
+				A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */,
+			);
+			path = OtoscopeSimulatorTests;
+			sourceTree = "<group>";
+		};
+		A188DAF01D8AB9BB00F29A78 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */,
+				A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,13 +164,31 @@
 			productReference = A14FE52D1C5CD9C900C55D0F /* OtoscopeSimulator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A188DADF1D8968B800F29A78 /* OtoscopeSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A188DAE91D8968B800F29A78 /* Build configuration list for PBXNativeTarget "OtoscopeSimulatorTests" */;
+			buildPhases = (
+				A188DADC1D8968B800F29A78 /* Sources */,
+				A188DADD1D8968B800F29A78 /* Frameworks */,
+				A188DADE1D8968B800F29A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A188DAE61D8968B800F29A78 /* PBXTargetDependency */,
+			);
+			name = OtoscopeSimulatorTests;
+			productName = OtoscopeSimulatorTests;
+			productReference = A188DAE01D8968B800F29A78 /* OtoscopeSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A14FE5251C5CD9C900C55D0F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "John Holcroft";
 				TargetAttributes = {
@@ -127,6 +196,11 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 32N726GGBJ;
 						LastSwiftMigration = 0800;
+					};
+					A188DADF1D8968B800F29A78 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A14FE52C1C5CD9C900C55D0F;
 					};
 				};
 			};
@@ -144,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				A14FE52C1C5CD9C900C55D0F /* OtoscopeSimulator */,
+				A188DADF1D8968B800F29A78 /* OtoscopeSimulatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +231,14 @@
 				A14FE53B1C5CD9C900C55D0F /* LaunchScreen.storyboard in Resources */,
 				A14FE5381C5CD9C900C55D0F /* Assets.xcassets in Resources */,
 				A14FE5361C5CD9C900C55D0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A188DADE1D8968B800F29A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A188DAEF1D89A3C100F29A78 /* MailChimpListEntry.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,12 +256,30 @@
 				A11D7DFC1C5E3E8D000E5106 /* RevealViewController.swift in Sources */,
 				A1850A501C78C71800D420E1 /* Condition.swift in Sources */,
 				A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */,
+				A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */,
 				A1B06F221D80484600DB4F6F /* LearnDetailViewController.swift in Sources */,
 				A1850A521C78CC8A00D420E1 /* Conditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A188DADC1D8968B800F29A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A188DAEB1D89691E00F29A78 /* MailChimpListMemberTests.swift in Sources */,
+				A188DAF71D8ABB9400F29A78 /* MD5DigesterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A188DAE61D8968B800F29A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14FE52C1C5CD9C900C55D0F /* OtoscopeSimulator */;
+			targetProxy = A188DAE51D8968B800F29A78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A14FE5341C5CD9C900C55D0F /* Main.storyboard */ = {
@@ -292,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/OtoscopeSimulator/Info.plist";
@@ -299,6 +401,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.montreux.otoscope-simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OtoscopeSimulator/OtoscopeSimulator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -308,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/OtoscopeSimulator/Info.plist";
@@ -315,8 +420,44 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.montreux.otoscope-simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OtoscopeSimulator/OtoscopeSimulator-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A188DAE71D8968B800F29A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = OtoscopeSimulatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mjhealthtech.OtoscopeSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtoscopeSimulator.app/OtoscopeSimulator";
+			};
+			name = Debug;
+		};
+		A188DAE81D8968B800F29A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = OtoscopeSimulatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mjhealthtech.OtoscopeSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtoscopeSimulator.app/OtoscopeSimulator";
 			};
 			name = Release;
 		};
@@ -340,6 +481,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A188DAE91D8968B800F29A78 /* Build configuration list for PBXNativeTarget "OtoscopeSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A188DAE71D8968B800F29A78 /* Debug */,
+				A188DAE81D8968B800F29A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
