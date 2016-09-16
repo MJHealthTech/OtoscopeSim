@@ -23,8 +23,8 @@ class MailChimpListMemberParserTests: XCTestCase {
         let listMember = MailChimpListMemberParser.parse(memberJsonData: memberJsonData)
         
         XCTAssertNotNil(listMember)
-        XCTAssertEqual(listMember?.emailAddress, "john.holcroft@montreux.co.uk")
-        XCTAssertEqual(listMember?.firstName, "John")
-        XCTAssertEqual(listMember?.lastName, "Holcroft")
+        XCTAssertEqual(listMember?.emailAddress, "michael.george.2@gmail.com")
+        XCTAssertEqual(listMember?.firstName, "Michael")
+        XCTAssertEqual(listMember?.lastName, "George")
     }
 }

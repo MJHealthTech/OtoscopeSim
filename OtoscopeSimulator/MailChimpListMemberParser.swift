@@ -10,12 +10,15 @@ import Foundation
 import SwiftyJSON
 
 class MailChimpListMemberParser {
+    static let FirstNameFieldName = "FIRSTNAME"
+    static let LastNameFieldName = "LASTNAME"
+
     static func parse(memberJsonData: Data) -> MailChimpListMember? {
         let json = JSON(data: memberJsonData)
         
         if let emailAddress = json["email_address"].string,
-            let firstName = json["merge_fields"]["FNAME"].string,
-            let lastName = json["merge_fields"]["LNAME"].string {
+            let firstName = json["merge_fields"][FirstNameFieldName].string,
+            let lastName = json["merge_fields"][LastNameFieldName].string {
             
             return MailChimpListMember(emailAddress:emailAddress, firstName:firstName, lastName:lastName)
         }
