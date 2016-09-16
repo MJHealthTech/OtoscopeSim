@@ -7,10 +7,11 @@
 //
 
 import XCTest
+@testable import OtoscopeSimulator
 
-class MailChimpListMemberTests: XCTestCase {
+class MailChimpListMemberParserTests: XCTestCase {
     
-    var memberJsonText: Data {
+    var memberJsonData: Data {
         let bundle = Bundle(for: type(of: self))
         let url = bundle.url(forResource: "MailChimpListEntry", withExtension: "txt")!
         let contents = try! Data(contentsOf: url)
@@ -18,7 +19,12 @@ class MailChimpListMemberTests: XCTestCase {
     }
     
     func testParsingValidUser() {
-        let jsonString = String(data:memberJsonText, encoding:String.Encoding.utf8)
-        print(jsonString)
+        
+        let listMember = MailChimpListMemberParser.parse(memberJsonData: memberJsonData)
+        
+        XCTAssertNotNil(listMember)
+        XCTAssertEqual(listMember?.emailAddress, "john.holcroft@montreux.co.uk")
+        XCTAssertEqual(listMember?.firstName, "John")
+        XCTAssertEqual(listMember?.lastName, "Holcroft")
     }
 }

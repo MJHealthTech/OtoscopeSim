@@ -3,3 +3,5 @@ Build
 3d_version/ear_test/Temp
 OtoscopeSimulator.xcodeproj/xcuserdata
 /OtoscopeSimulator.xcodeproj/project.xcworkspace/xcuserdata
+/Podfile.lock
+/Pods
