@@ -16,6 +16,8 @@
 		A14FE53B1C5CD9C900C55D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5391C5CD9C900C55D0F /* LaunchScreen.storyboard */; };
 		A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */; };
 		A184CAAF1D8ACFD9002649DA /* MailChimpListMemberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */; };
+		A184CAB11D8C186B002649DA /* MailChimpAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAB01D8C186B002649DA /* MailChimpAccessTests.swift */; };
+		A184CAB31D8C1DDE002649DA /* MailChimpError.txt in Resources */ = {isa = PBXBuildFile; fileRef = A184CAB21D8C1DDE002649DA /* MailChimpError.txt */; };
 		A1850A501C78C71800D420E1 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1850A4F1C78C71800D420E1 /* Condition.swift */; };
 		A1850A521C78CC8A00D420E1 /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1850A511C78CC8A00D420E1 /* Conditions.swift */; };
 		A188DAEB1D89691E00F29A78 /* MailChimpListMemberParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAEA1D89691E00F29A78 /* MailChimpListMemberParserTests.swift */; };
@@ -51,6 +53,8 @@
 		A14FE53C1C5CD9C900C55D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMember.swift; sourceTree = "<group>"; };
 		A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMemberParser.swift; sourceTree = "<group>"; };
+		A184CAB01D8C186B002649DA /* MailChimpAccessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpAccessTests.swift; sourceTree = "<group>"; };
+		A184CAB21D8C1DDE002649DA /* MailChimpError.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MailChimpError.txt; sourceTree = "<group>"; };
 		A1850A4F1C78C71800D420E1 /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Model/Condition.swift; sourceTree = "<group>"; };
 		A1850A511C78CC8A00D420E1 /* Conditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conditions.swift; path = Model/Conditions.swift; sourceTree = "<group>"; };
 		A188DAE01D8968B800F29A78 /* OtoscopeSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtoscopeSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +173,8 @@
 				A188DAEA1D89691E00F29A78 /* MailChimpListMemberParserTests.swift */,
 				A188DAEE1D89A3C100F29A78 /* MailChimpListEntry.txt */,
 				A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */,
+				A184CAB01D8C186B002649DA /* MailChimpAccessTests.swift */,
+				A184CAB21D8C1DDE002649DA /* MailChimpError.txt */,
 			);
 			path = OtoscopeSimulatorTests;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A184CAB31D8C1DDE002649DA /* MailChimpError.txt in Resources */,
 				A188DAEF1D89A3C100F29A78 /* MailChimpListEntry.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +367,7 @@
 			files = (
 				A188DAEB1D89691E00F29A78 /* MailChimpListMemberParserTests.swift in Sources */,
 				A188DAF71D8ABB9400F29A78 /* MD5DigesterTests.swift in Sources */,
+				A184CAB11D8C186B002649DA /* MailChimpAccessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,13 @@ class MailChimpListMemberParserTests: XCTestCase {
         return contents
     }
     
+    var errorJsonData: Data {
+        let bundle = Bundle(for: type(of: self))
+        let url = bundle.url(forResource: "MailChimpError", withExtension: "txt")!
+        let contents = try! Data(contentsOf: url)
+        return contents
+    }
+    
     func testParsingValidUser() {
         
         let listMember = MailChimpListMemberParser.parse(memberJsonData: memberJsonData)
@@ -26,5 +33,12 @@ class MailChimpListMemberParserTests: XCTestCase {
         XCTAssertEqual(listMember?.emailAddress, "michael.george.2@gmail.com")
         XCTAssertEqual(listMember?.firstName, "Michael")
         XCTAssertEqual(listMember?.lastName, "George")
+    }
+    
+    func testParsingInvalidUser(){
+        
+        let listMember = MailChimpListMemberParser.parse(memberJsonData: errorJsonData)
+        
+        XCTAssertNil(listMember)
     }
 }
