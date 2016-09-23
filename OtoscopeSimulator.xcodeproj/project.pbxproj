@@ -27,6 +27,7 @@
 		A1B06F201D8044B100DB4F6F /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */; };
 		A1B06F221D80484600DB4F6F /* LearnDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */; };
 		A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */; };
+		A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */; };
 		FB4A2CA9F228452AE8ABC13A /* Pods_OtoscopeSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
 		A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnDetailViewController.swift; sourceTree = "<group>"; };
 		A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockScreenViewController.swift; sourceTree = "<group>"; };
+		A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpQuery.swift; sourceTree = "<group>"; };
 		BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtoscopeSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95510F82860CC1104432B2D /* Pods-OtoscopeSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoscopeSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-OtoscopeSimulator/Pods-OtoscopeSimulator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +186,7 @@
 			children = (
 				A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */,
 				A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */,
+				A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				A1850A501C78C71800D420E1 /* Condition.swift in Sources */,
 				A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */,
 				A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */,
+				A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */,
 				A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */,
 				A1B06F221D80484600DB4F6F /* LearnDetailViewController.swift in Sources */,
 				A1850A521C78CC8A00D420E1 /* Conditions.swift in Sources */,
@@ -493,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82716A29C3AA12927757F333 /* Pods-OtoscopeSimulator.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -513,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E95510F82860CC1104432B2D /* Pods-OtoscopeSimulator.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
