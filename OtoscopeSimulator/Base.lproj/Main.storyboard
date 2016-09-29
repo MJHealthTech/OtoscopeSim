@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ba1-fD-2QY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSP-Az-20P">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -209,10 +209,104 @@
             </objects>
             <point key="canvasLocation" x="-1156" y="-1191"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing Page View Controller-->
+        <scene sceneID="vcB-l5-dO7">
+            <objects>
+                <viewController storyboardIdentifier="LandingPage" id="bSP-Az-20P" customClass="LandingPageViewController" customModule="OtoscopeSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JEO-IY-8j9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wqc-cP-qK2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jo1-oi-v17">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to diagnose and manage ear conditions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E5-pB-lSH">
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CY-DJ-Ht2">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ag8-Mx-9d6"/>
+                                </constraints>
+                                <state key="normal" title="Log in with your SimulationSense account"/>
+                                <connections>
+                                    <segue destination="xen-rs-cHM" kind="presentation" id="8JU-fF-rEn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1V-xD-KOa">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="UnH-Qm-SQa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Try it for free"/>
+                                <connections>
+                                    <segue destination="Ify-jJ-anm" kind="show" id="Jm6-ua-8u5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="otoscope_held_drawing_white" translatesAutoresizingMaskIntoConstraints="NO" id="EJL-w4-qrh"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVJ-fJ-Qul" userLabel="Grey divider">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="vyY-0Y-xFR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y1V-xD-KOa" firstAttribute="centerX" secondItem="jo1-oi-v17" secondAttribute="centerX" id="09s-25-rMD"/>
+                            <constraint firstItem="EJL-w4-qrh" firstAttribute="top" secondItem="5E5-pB-lSH" secondAttribute="bottom" constant="1" id="3Di-lK-oEj">
+                                <variation key="heightClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="3CY-DJ-Ht2" firstAttribute="width" secondItem="jo1-oi-v17" secondAttribute="width" id="440-XI-wC5"/>
+                            <constraint firstItem="y1V-xD-KOa" firstAttribute="width" secondItem="jo1-oi-v17" secondAttribute="width" id="8rA-mn-w7A"/>
+                            <constraint firstItem="5E5-pB-lSH" firstAttribute="top" secondItem="JEO-IY-8j9" secondAttribute="bottom" constant="100" id="H2I-m9-3Y5"/>
+                            <constraint firstItem="3CY-DJ-Ht2" firstAttribute="centerX" secondItem="jo1-oi-v17" secondAttribute="centerX" id="H5C-2a-9bl"/>
+                            <constraint firstItem="y1V-xD-KOa" firstAttribute="top" secondItem="EJL-w4-qrh" secondAttribute="bottom" constant="20" id="H5z-jA-DWt"/>
+                            <constraint firstItem="5E5-pB-lSH" firstAttribute="width" secondItem="jo1-oi-v17" secondAttribute="width" multiplier="0.66" id="K7P-3V-ZJR"/>
+                            <constraint firstItem="EJL-w4-qrh" firstAttribute="centerX" secondItem="jo1-oi-v17" secondAttribute="centerX" id="K7S-Bh-lQr"/>
+                            <constraint firstItem="5E5-pB-lSH" firstAttribute="centerX" secondItem="jo1-oi-v17" secondAttribute="centerX" id="RXd-vS-PoL"/>
+                            <constraint firstItem="Wqc-cP-qK2" firstAttribute="top" secondItem="3CY-DJ-Ht2" secondAttribute="bottom" constant="34" id="b3q-vj-TlU"/>
+                            <constraint firstItem="EJL-w4-qrh" firstAttribute="width" secondItem="jo1-oi-v17" secondAttribute="width" multiplier="0.7" id="eDO-fx-Qgu"/>
+                            <constraint firstItem="3CY-DJ-Ht2" firstAttribute="top" secondItem="y1V-xD-KOa" secondAttribute="bottom" id="ikK-l5-ER3"/>
+                            <constraint firstItem="jVJ-fJ-Qul" firstAttribute="centerX" secondItem="jo1-oi-v17" secondAttribute="centerX" id="kmM-MK-6nV"/>
+                            <constraint firstItem="jVJ-fJ-Qul" firstAttribute="width" secondItem="jo1-oi-v17" secondAttribute="width" multiplier="0.9" id="lzz-Mf-r9v"/>
+                            <constraint firstItem="3CY-DJ-Ht2" firstAttribute="top" secondItem="jVJ-fJ-Qul" secondAttribute="bottom" id="nRH-cf-CUi"/>
+                            <constraint firstItem="5E5-pB-lSH" firstAttribute="top" secondItem="jo1-oi-v17" secondAttribute="top" constant="20" id="s03-h2-kBX">
+                                <variation key="heightClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="EJL-w4-qrh" firstAttribute="centerY" secondItem="jo1-oi-v17" secondAttribute="centerY" priority="750" id="yQg-Ql-vQL">
+                                <variation key="heightClass=compact" constant="-25"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Di-lK-oEj"/>
+                                <exclude reference="s03-h2-kBX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="3Di-lK-oEj"/>
+                                <exclude reference="yQg-Ql-vQL"/>
+                                <exclude reference="H2I-m9-3Y5"/>
+                                <include reference="s03-h2-kBX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYb-X2-7Xs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1388" y="-509.59520239880067"/>
+        </scene>
+        <!--Training Landing Page View Controller-->
         <scene sceneID="8Pk-dd-UC4">
             <objects>
-                <viewController id="Ify-jJ-anm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrainingLandingPage" id="Ify-jJ-anm" customClass="TrainingLandingPageViewController" customModule="OtoscopeSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bmt-QD-6Ij"/>
                         <viewControllerLayoutGuide type="bottom" id="wUc-DJ-qcG"/>
@@ -333,9 +427,21 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Kyr-Op-OXH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvU-lf-vF5">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5W-Gx-drD">
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutPressed" destination="Ify-jJ-anm" eventType="touchUpInside" id="3fD-0d-mU6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uvU-lf-vF5" firstAttribute="centerX" secondItem="jgC-dy-TGQ" secondAttribute="centerX" id="4oP-3R-DzT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bvU-Xm-SCr" secondAttribute="trailing" id="5cY-Da-Pc0"/>
                             <constraint firstItem="cnD-Wc-IoZ" firstAttribute="centerX" secondItem="jgC-dy-TGQ" secondAttribute="centerX" multiplier="3/2" id="98O-pt-BYq"/>
                             <constraint firstItem="BLQ-Kx-p0d" firstAttribute="top" secondItem="npV-Uk-tWu" secondAttribute="bottom" constant="8" id="F62-y2-RwC"/>
@@ -344,12 +450,15 @@
                             <constraint firstItem="npV-Uk-tWu" firstAttribute="top" secondItem="bmt-QD-6Ij" secondAttribute="bottom" constant="8" id="IiC-nS-80G"/>
                             <constraint firstItem="wUc-DJ-qcG" firstAttribute="top" secondItem="Vv4-fZ-K1N" secondAttribute="bottom" constant="8" id="KKI-SI-4jj"/>
                             <constraint firstItem="cnD-Wc-IoZ" firstAttribute="width" secondItem="cnD-Wc-IoZ" secondAttribute="height" multiplier="15:8" id="OVd-MB-Lr1"/>
+                            <constraint firstAttribute="trailing" secondItem="t5W-Gx-drD" secondAttribute="trailing" constant="13" id="RAp-Hf-FhF"/>
                             <constraint firstItem="Rff-iS-ZRc" firstAttribute="centerX" secondItem="jgC-dy-TGQ" secondAttribute="centerX" id="Tt7-rJ-CUG"/>
                             <constraint firstItem="Vv4-fZ-K1N" firstAttribute="centerX" secondItem="jgC-dy-TGQ" secondAttribute="centerX" id="W6h-wv-Kgq"/>
                             <constraint firstItem="bvU-Xm-SCr" firstAttribute="top" secondItem="Rff-iS-ZRc" secondAttribute="bottom" constant="8" id="WFb-uz-0Dg"/>
+                            <constraint firstItem="t5W-Gx-drD" firstAttribute="top" secondItem="bmt-QD-6Ij" secondAttribute="bottom" id="XgF-RE-f0i"/>
                             <constraint firstItem="bvU-Xm-SCr" firstAttribute="centerX" secondItem="jgC-dy-TGQ" secondAttribute="centerX" id="dWX-Yr-vVe"/>
                             <constraint firstItem="Vv4-fZ-K1N" firstAttribute="top" secondItem="bvU-Xm-SCr" secondAttribute="bottom" priority="750" constant="8" id="l7n-0D-N6x"/>
                             <constraint firstItem="npV-Uk-tWu" firstAttribute="centerX" secondItem="jgC-dy-TGQ" secondAttribute="centerX" id="p0m-Uv-7qe"/>
+                            <constraint firstItem="Rff-iS-ZRc" firstAttribute="top" secondItem="uvU-lf-vF5" secondAttribute="bottom" constant="8" id="qFR-BF-tm9"/>
                             <constraint firstItem="bvU-Xm-SCr" firstAttribute="width" secondItem="jgC-dy-TGQ" secondAttribute="width" id="sxz-Ur-wM6"/>
                             <constraint firstItem="BLQ-Kx-p0d" firstAttribute="centerX" secondItem="jgC-dy-TGQ" secondAttribute="centerX" multiplier="1/2" id="vnw-pd-ngM"/>
                             <constraint firstItem="wUc-DJ-qcG" firstAttribute="top" secondItem="bvU-Xm-SCr" secondAttribute="bottom" constant="20" id="zwH-dJ-zGl"/>
@@ -357,15 +466,95 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="sxz-Ur-wM6"/>
-                                <exclude reference="OVd-MB-Lr1"/>
                                 <exclude reference="zwH-dJ-zGl"/>
+                                <exclude reference="OVd-MB-Lr1"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="userNameLabel" destination="uvU-lf-vF5" id="dDw-yk-fAf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwe-Ob-6kM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209.5" y="-256.5"/>
+            <point key="canvasLocation" x="203" y="-641"/>
+        </scene>
+        <!--Log In Page View Controller-->
+        <scene sceneID="pfk-Vz-U3n">
+            <objects>
+                <viewController id="xen-rs-cHM" customClass="LogInPageViewController" customModule="OtoscopeSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3V2-RX-MNG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Smz-tr-mMr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uhz-na-I5q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42s-fD-udW">
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonPressed" destination="xen-rs-cHM" eventType="touchUpInside" id="Map-S7-794"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDX-9p-0Xm">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="6gk-Du-ITr"/>
+                                    <constraint firstAttribute="width" constant="300" id="eY3-J2-rsv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="logInButtonPressed" destination="xen-rs-cHM" eventType="touchUpInside" id="vFL-fG-kZ1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OvI-Ui-MoR">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="go"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xen-rs-cHM" id="c7L-qa-Q6Z"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi! Access all ear conditions and training with your SimulationSense login." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yc-8g-SjM">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNg-qK-fWg">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OvI-Ui-MoR" firstAttribute="centerX" secondItem="FDX-9p-0Xm" secondAttribute="centerX" id="2sk-7Y-mEg"/>
+                            <constraint firstItem="FDX-9p-0Xm" firstAttribute="centerY" secondItem="Uhz-na-I5q" secondAttribute="centerY" id="31i-d2-Xwh"/>
+                            <constraint firstItem="YNg-qK-fWg" firstAttribute="top" secondItem="FDX-9p-0Xm" secondAttribute="bottom" constant="8" id="4di-ya-z12"/>
+                            <constraint firstItem="0yc-8g-SjM" firstAttribute="width" secondItem="FDX-9p-0Xm" secondAttribute="width" id="AbV-5D-IGq"/>
+                            <constraint firstItem="0yc-8g-SjM" firstAttribute="centerX" secondItem="Uhz-na-I5q" secondAttribute="centerX" id="Iei-Ef-Z6x"/>
+                            <constraint firstItem="YNg-qK-fWg" firstAttribute="width" secondItem="FDX-9p-0Xm" secondAttribute="width" id="KU1-ve-Xf8"/>
+                            <constraint firstItem="FDX-9p-0Xm" firstAttribute="centerX" secondItem="Uhz-na-I5q" secondAttribute="centerX" id="SYP-tZ-hfO"/>
+                            <constraint firstItem="YNg-qK-fWg" firstAttribute="centerX" secondItem="Uhz-na-I5q" secondAttribute="centerX" id="YJo-KF-1xE"/>
+                            <constraint firstItem="OvI-Ui-MoR" firstAttribute="top" secondItem="0yc-8g-SjM" secondAttribute="bottom" constant="22" id="jq9-eT-KYa"/>
+                            <constraint firstItem="FDX-9p-0Xm" firstAttribute="top" secondItem="OvI-Ui-MoR" secondAttribute="bottom" constant="10" id="lLd-0H-Jom"/>
+                            <constraint firstItem="42s-fD-udW" firstAttribute="leading" secondItem="Uhz-na-I5q" secondAttribute="leadingMargin" constant="3" id="rUJ-Zm-rsC"/>
+                            <constraint firstItem="OvI-Ui-MoR" firstAttribute="width" secondItem="FDX-9p-0Xm" secondAttribute="width" id="rcG-Hp-lQi"/>
+                            <constraint firstItem="42s-fD-udW" firstAttribute="top" secondItem="3V2-RX-MNG" secondAttribute="bottom" id="rjK-pT-T3V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="OvI-Ui-MoR" id="bHS-Q8-TZo"/>
+                        <outlet property="progressLabel" destination="YNg-qK-fWg" id="Scs-US-B5x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTW-fG-D0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="-58"/>
         </scene>
         <!--Simulator View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -625,6 +814,7 @@ here</string>
         <image name="Otoscope Left" width="455" height="153"/>
         <image name="OttoscopeView" width="121" height="120"/>
         <image name="otoscope_held_drawing" width="186" height="100"/>
+        <image name="otoscope_held_drawing_white" width="375" height="201"/>
         <image name="phone_held_drawing" width="113" height="100"/>
     </resources>
 </document>

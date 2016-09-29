@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A11D7DFA1C5E2DC2000E5106 /* AnswerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */; };
 		A11D7DFC1C5E3E8D000E5106 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D7DFB1C5E3E8D000E5106 /* RevealViewController.swift */; };
+		A13370C81D9A7B7700961AD7 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13370C71D9A7B7700961AD7 /* LandingPageViewController.swift */; };
+		A13370CA1D9A804500961AD7 /* TrainingLandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13370C91D9A804500961AD7 /* TrainingLandingPageViewController.swift */; };
+		A13370CC1D9C3CC700961AD7 /* LogInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13370CB1D9C3CC700961AD7 /* LogInPageViewController.swift */; };
+		A13370CE1D9C410B00961AD7 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13370CD1D9C410B00961AD7 /* UserStore.swift */; };
 		A14FE5311C5CD9C900C55D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14FE5301C5CD9C900C55D0F /* AppDelegate.swift */; };
 		A14FE5331C5CD9C900C55D0F /* SimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */; };
 		A14FE5361C5CD9C900C55D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5341C5CD9C900C55D0F /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		82716A29C3AA12927757F333 /* Pods-OtoscopeSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoscopeSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OtoscopeSimulator/Pods-OtoscopeSimulator.debug.xcconfig"; sourceTree = "<group>"; };
 		A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCellView.swift; sourceTree = "<group>"; };
 		A11D7DFB1C5E3E8D000E5106 /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
+		A13370C71D9A7B7700961AD7 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandingPageViewController.swift; path = Views/LandingPageViewController.swift; sourceTree = "<group>"; };
+		A13370C91D9A804500961AD7 /* TrainingLandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingLandingPageViewController.swift; sourceTree = "<group>"; };
+		A13370CB1D9C3CC700961AD7 /* LogInPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInPageViewController.swift; path = Views/LogInPageViewController.swift; sourceTree = "<group>"; };
+		A13370CD1D9C410B00961AD7 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserStore.swift; path = Services/UserStore.swift; sourceTree = "<group>"; };
 		A14FE52D1C5CD9C900C55D0F /* OtoscopeSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtoscopeSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14FE5301C5CD9C900C55D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +115,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A13370C61D9A7B4600961AD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */,
+				A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */,
+				A11D7DFB1C5E3E8D000E5106 /* RevealViewController.swift */,
+				A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */,
+				A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */,
+				A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */,
+				A13370C71D9A7B7700961AD7 /* LandingPageViewController.swift */,
+				A13370C91D9A804500961AD7 /* TrainingLandingPageViewController.swift */,
+				A13370CB1D9C3CC700961AD7 /* LogInPageViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		A14FE5241C5CD9C900C55D0F = {
 			isa = PBXGroup;
 			children = (
@@ -133,15 +157,10 @@
 				A188DAF01D8AB9BB00F29A78 /* Services */,
 				A1850A4E1C78C6BC00D420E1 /* Model */,
 				A14FE5301C5CD9C900C55D0F /* AppDelegate.swift */,
-				A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */,
+				A13370C61D9A7B4600961AD7 /* Views */,
 				A14FE5341C5CD9C900C55D0F /* Main.storyboard */,
 				A184CAA91D8ACA94002649DA /* Supporting Files */,
 				A14FE5391C5CD9C900C55D0F /* LaunchScreen.storyboard */,
-				A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */,
-				A11D7DFB1C5E3E8D000E5106 /* RevealViewController.swift */,
-				A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */,
-				A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */,
-				A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */,
 			);
 			path = OtoscopeSimulator;
 			sourceTree = "<group>";
@@ -184,6 +203,7 @@
 				A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */,
 				A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */,
 				A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */,
+				A13370CD1D9C410B00961AD7 /* UserStore.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -355,8 +375,12 @@
 				A1850A501C78C71800D420E1 /* Condition.swift in Sources */,
 				A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */,
 				A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */,
+				A13370C81D9A7B7700961AD7 /* LandingPageViewController.swift in Sources */,
+				A13370CA1D9A804500961AD7 /* TrainingLandingPageViewController.swift in Sources */,
 				A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */,
 				A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */,
+				A13370CE1D9C410B00961AD7 /* UserStore.swift in Sources */,
+				A13370CC1D9C3CC700961AD7 /* LogInPageViewController.swift in Sources */,
 				A1B06F221D80484600DB4F6F /* LearnDetailViewController.swift in Sources */,
 				A1850A521C78CC8A00D420E1 /* Conditions.swift in Sources */,
 			);
