@@ -11,6 +11,7 @@ import CoreMotion
 
 class SimulatorViewController: UIViewController {
 
+    var conditionSet:[Condition] = []
     var presentedCondition:Condition = Conditions.Normal
     var shownConditions:[String] = []
     
@@ -28,19 +29,35 @@ class SimulatorViewController: UIViewController {
     var maxConstraintValue:CGFloat {
         return UIScreen.main.bounds.height - ottoscopeImageView.frame.height
     }
+  
+    func forceLandscapeLeftOrientation() {
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
+        UIViewController.attemptRotationToDeviceOrientation()
+    }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .landscapeLeft }
+    
+    override var shouldAutorotate: Bool { return true }
+
     override func viewDidLoad() {
+        forceLandscapeLeftOrientation()
         self.earImageView.isHidden = true
         startXCentreConstraintConstant = self.xCentreConstraint.constant
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        guard (self.shownConditions.count != Conditions.TestSet.count) else {
-            self.dismiss(animated: true, completion: nil)
+        guard (self.shownConditions.count != conditionSet.count) else {
+            if let navigationController = self.navigationController {
+                navigationController.popToRootViewController(animated: true)
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
             return
         }
         
-        self.presentedCondition = self.chooseNextRandomCondition(from:Conditions.TestSet)
+        self.presentedCondition = self.chooseNextRandomCondition(from:conditionSet)
         self.shownConditions.append(presentedCondition.name)
 
         self.setConditionImage(presentedCondition.imageName)
@@ -175,6 +192,10 @@ class SimulatorViewController: UIViewController {
         } else {
             self.ottoscopeLeftImageView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
         }
+    }
+    
+    @IBAction func backButtonPressed() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

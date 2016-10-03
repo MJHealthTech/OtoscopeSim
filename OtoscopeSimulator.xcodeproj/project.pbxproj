@@ -18,6 +18,10 @@
 		A14FE5361C5CD9C900C55D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5341C5CD9C900C55D0F /* Main.storyboard */; };
 		A14FE5381C5CD9C900C55D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5371C5CD9C900C55D0F /* Assets.xcassets */; };
 		A14FE53B1C5CD9C900C55D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5391C5CD9C900C55D0F /* LaunchScreen.storyboard */; };
+		A164D0CB1DA2511C00BC1937 /* SuiteOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */; };
+		A164D0CD1DA255D700BC1937 /* Suite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CC1DA255D700BC1937 /* Suite.swift */; };
+		A164D0CF1DA2578000BC1937 /* Suites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CE1DA2578000BC1937 /* Suites.swift */; };
+		A164D0D11DA296FA00BC1937 /* SuiteChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0D01DA296FA00BC1937 /* SuiteChoiceViewController.swift */; };
 		A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */; };
 		A184CAAF1D8ACFD9002649DA /* MailChimpListMemberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */; };
 		A184CAB31D8C1DDE002649DA /* MailChimpError.txt in Resources */ = {isa = PBXBuildFile; fileRef = A184CAB21D8C1DDE002649DA /* MailChimpError.txt */; };
@@ -59,6 +63,10 @@
 		A14FE5371C5CD9C900C55D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14FE53A1C5CD9C900C55D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A14FE53C1C5CD9C900C55D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteOverviewViewController.swift; path = Views/SuiteOverviewViewController.swift; sourceTree = "<group>"; };
+		A164D0CC1DA255D700BC1937 /* Suite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suite.swift; path = Model/Suite.swift; sourceTree = "<group>"; };
+		A164D0CE1DA2578000BC1937 /* Suites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suites.swift; sourceTree = "<group>"; };
+		A164D0D01DA296FA00BC1937 /* SuiteChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteChoiceViewController.swift; path = Views/SuiteChoiceViewController.swift; sourceTree = "<group>"; };
 		A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMember.swift; sourceTree = "<group>"; };
 		A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMemberParser.swift; sourceTree = "<group>"; };
 		A184CAB21D8C1DDE002649DA /* MailChimpError.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MailChimpError.txt; sourceTree = "<group>"; };
@@ -127,6 +135,8 @@
 				A13370C71D9A7B7700961AD7 /* LandingPageViewController.swift */,
 				A13370C91D9A804500961AD7 /* TrainingLandingPageViewController.swift */,
 				A13370CB1D9C3CC700961AD7 /* LogInPageViewController.swift */,
+				A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */,
+				A164D0D01DA296FA00BC1937 /* SuiteChoiceViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -181,6 +191,8 @@
 				A1850A511C78CC8A00D420E1 /* Conditions.swift */,
 				A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */,
 				A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */,
+				A164D0CC1DA255D700BC1937 /* Suite.swift */,
+				A164D0CE1DA2578000BC1937 /* Suites.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -366,12 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A164D0CF1DA2578000BC1937 /* Suites.swift in Sources */,
 				A1B06F201D8044B100DB4F6F /* LearnTableViewController.swift in Sources */,
+				A164D0CD1DA255D700BC1937 /* Suite.swift in Sources */,
 				A14FE5331C5CD9C900C55D0F /* SimulatorViewController.swift in Sources */,
 				A11D7DFA1C5E2DC2000E5106 /* AnswerCellView.swift in Sources */,
 				A184CAAF1D8ACFD9002649DA /* MailChimpListMemberParser.swift in Sources */,
+				A164D0D11DA296FA00BC1937 /* SuiteChoiceViewController.swift in Sources */,
 				A14FE5311C5CD9C900C55D0F /* AppDelegate.swift in Sources */,
 				A11D7DFC1C5E3E8D000E5106 /* RevealViewController.swift in Sources */,
+				A164D0CB1DA2511C00BC1937 /* SuiteOverviewViewController.swift in Sources */,
 				A1850A501C78C71800D420E1 /* Condition.swift in Sources */,
 				A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */,
 				A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */,

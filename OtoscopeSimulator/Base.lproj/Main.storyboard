@@ -13,19 +13,19 @@
             <objects>
                 <tableViewController id="hw5-rK-aAg" customClass="LearnTableViewController" customModule="OtoscopeSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mde-lV-vRd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Condition" textLabel="QZX-yj-xQG" imageView="M8P-hb-tlm" style="IBUITableViewCellStyleDefault" id="TtU-TY-c6C">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="667" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TtU-TY-c6C" id="CSE-fS-giL">
-                                    <frame key="frameInset" width="342" height="43"/>
+                                    <frame key="frameInset" width="634" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QZX-yj-xQG">
-                                            <frame key="frameInset" minX="73" width="267" height="43"/>
+                                            <frame key="frameInset" minX="73" width="559" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,10 +42,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LockedCondition" textLabel="LfG-6m-b2L" detailTextLabel="Rad-5Z-3Pz" imageView="uyY-VF-gni" style="IBUITableViewCellStyleValue1" id="UJ2-hr-go8">
-                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="136" width="667" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UJ2-hr-go8" id="uvL-ng-bSh">
-                                    <frame key="frameInset" width="342" height="43"/>
+                                    <frame key="frameInset" width="634" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LfG-6m-b2L">
@@ -56,7 +56,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Unlock" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rad-5Z-3Pz">
-                                            <frame key="frameInset" minX="289" minY="12" width="51" height="20"/>
+                                            <frame key="frameInset" minX="581" minY="12" width="51" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,7 +94,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qgZ-TP-31E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f6C-Oj-Tz7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eo6-ie-Jdj">
@@ -141,7 +141,7 @@
                         <viewControllerLayoutGuide type="bottom" id="OBE-C7-qo8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0QI-Jd-C11">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teX-R9-QA6">
@@ -218,7 +218,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Wqc-cP-qK2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jo1-oi-v17">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to diagnose and manage ear conditions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E5-pB-lSH">
@@ -244,7 +244,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Try it for free"/>
                                 <connections>
-                                    <segue destination="Ify-jJ-anm" kind="show" id="Jm6-ua-8u5"/>
+                                    <segue destination="S7Q-En-I8o" kind="show" id="QCE-C6-1qk"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="otoscope_held_drawing_white" translatesAutoresizingMaskIntoConstraints="NO" id="EJL-w4-qrh"/>
@@ -284,16 +284,16 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="3Di-lK-oEj"/>
                                 <exclude reference="s03-h2-kBX"/>
+                                <exclude reference="3Di-lK-oEj"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="3Di-lK-oEj"/>
-                                <exclude reference="yQg-Ql-vQL"/>
                                 <exclude reference="H2I-m9-3Y5"/>
                                 <include reference="s03-h2-kBX"/>
+                                <include reference="3Di-lK-oEj"/>
+                                <exclude reference="yQg-Ql-vQL"/>
                             </mask>
                         </variation>
                     </view>
@@ -301,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYb-X2-7Xs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1388" y="-509.59520239880067"/>
+            <point key="canvasLocation" x="-1399" y="239"/>
         </scene>
         <!--Training Landing Page View Controller-->
         <scene sceneID="8Pk-dd-UC4">
@@ -312,7 +312,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wUc-DJ-qcG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jgC-dy-TGQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold your phone like an otoscope" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npV-Uk-tWu">
@@ -466,8 +466,8 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="sxz-Ur-wM6"/>
-                                <exclude reference="zwH-dJ-zGl"/>
                                 <exclude reference="OVd-MB-Lr1"/>
+                                <exclude reference="zwH-dJ-zGl"/>
                             </mask>
                         </variation>
                     </view>
@@ -477,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwe-Ob-6kM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="203" y="-641"/>
+            <point key="canvasLocation" x="978" y="239"/>
         </scene>
         <!--Log In Page View Controller-->
         <scene sceneID="pfk-Vz-U3n">
@@ -488,7 +488,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Smz-tr-mMr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Uhz-na-I5q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42s-fD-udW">
@@ -554,7 +554,125 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTW-fG-D0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-593" y="-58"/>
+            <point key="canvasLocation" x="-383" y="-166"/>
+        </scene>
+        <!--Suite Choice View Controller-->
+        <scene sceneID="xYZ-yK-jjD">
+            <objects>
+                <viewController storyboardIdentifier="SuiteChoicePage" id="Nqg-5a-YMY" customClass="SuiteChoiceViewController" customModule="OtoscopeSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2W-ze-tZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="bgk-Y2-Ztf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="arG-ln-kiU">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaJ-4w-3C0">
+                                <state key="normal" title="Suite 1 - 5 Common Conditions"/>
+                                <connections>
+                                    <segue destination="dAW-cH-3Cc" kind="show" identifier="Suite 1" id="MgC-J1-gjx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gk-Ht-pqR">
+                                <state key="normal" title="Suite 2 - Normal or not normal"/>
+                                <connections>
+                                    <segue destination="dAW-cH-3Cc" kind="show" identifier="Suite 2" id="60w-vn-tiK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEJ-Cp-Es4">
+                                <state key="normal" title="Suite 3"/>
+                                <connections>
+                                    <segue destination="dAW-cH-3Cc" kind="show" identifier="Suite 3" id="mxC-4h-mc2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hd-EF-7oK">
+                                <state key="normal" title="Suite 5"/>
+                                <connections>
+                                    <segue destination="dAW-cH-3Cc" kind="show" identifier="Suite 5" id="KnM-gX-TWg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to diagnose and manage ear conditions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-xe-9Bz">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="euV-pA-hoV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b2-6Q-3dm">
+                                <state key="normal" title="Suite 4"/>
+                                <connections>
+                                    <segue destination="dAW-cH-3Cc" kind="show" identifier="Suite 4" id="7Vq-fw-17d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9hd-EF-7oK" firstAttribute="centerX" secondItem="arG-ln-kiU" secondAttribute="centerX" id="1XU-mM-CaR"/>
+                            <constraint firstItem="4Gk-Ht-pqR" firstAttribute="top" secondItem="AaJ-4w-3C0" secondAttribute="bottom" constant="12" id="2zy-Rd-wiM"/>
+                            <constraint firstItem="3b2-6Q-3dm" firstAttribute="centerX" secondItem="arG-ln-kiU" secondAttribute="centerX" id="BKL-f6-0Z8"/>
+                            <constraint firstItem="IEJ-Cp-Es4" firstAttribute="top" secondItem="4Gk-Ht-pqR" secondAttribute="bottom" constant="12" id="QSK-OI-eb8"/>
+                            <constraint firstItem="4Gk-Ht-pqR" firstAttribute="centerX" secondItem="arG-ln-kiU" secondAttribute="centerX" id="WzL-QV-Giv"/>
+                            <constraint firstItem="kOT-xe-9Bz" firstAttribute="centerX" secondItem="arG-ln-kiU" secondAttribute="centerX" id="f4E-Dc-dj1"/>
+                            <constraint firstItem="kOT-xe-9Bz" firstAttribute="top" secondItem="c2W-ze-tZC" secondAttribute="bottom" constant="8" id="lPE-Nk-CoD"/>
+                            <constraint firstItem="IEJ-Cp-Es4" firstAttribute="centerY" secondItem="arG-ln-kiU" secondAttribute="centerY" id="qCy-8k-Vj8"/>
+                            <constraint firstItem="AaJ-4w-3C0" firstAttribute="centerX" secondItem="arG-ln-kiU" secondAttribute="centerX" id="w0W-JN-OSp"/>
+                            <constraint firstItem="IEJ-Cp-Es4" firstAttribute="centerX" secondItem="arG-ln-kiU" secondAttribute="centerX" id="yfX-uf-mHB"/>
+                            <constraint firstItem="9hd-EF-7oK" firstAttribute="top" secondItem="3b2-6Q-3dm" secondAttribute="bottom" constant="12" id="ykL-9l-Dmf"/>
+                            <constraint firstItem="3b2-6Q-3dm" firstAttribute="top" secondItem="IEJ-Cp-Es4" secondAttribute="bottom" constant="12" id="zPr-Wh-PpU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NCr-Bf-tFP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fnu-NO-Mca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.8" y="-428.63568215892059"/>
+        </scene>
+        <!--Suite Overview View Controller-->
+        <scene sceneID="27Y-5J-9hq">
+            <objects>
+                <viewController id="dAW-cH-3Cc" customClass="SuiteOverviewViewController" customModule="OtoscopeSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W5T-sw-VZQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OKa-Pq-52T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qHt-9p-O5V">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRI-dL-Acs">
+                                <mutableString key="text">Blurb on condition
+ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-Wf-xDd">
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="GD3-dB-Vj7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZRI-dL-Acs" firstAttribute="top" secondItem="qHt-9p-O5V" secondAttribute="topMargin" id="IoR-yU-EuL"/>
+                            <constraint firstItem="MKr-Wf-xDd" firstAttribute="trailing" secondItem="qHt-9p-O5V" secondAttribute="trailingMargin" id="L34-Ge-fmO"/>
+                            <constraint firstItem="MKr-Wf-xDd" firstAttribute="leading" secondItem="qHt-9p-O5V" secondAttribute="leadingMargin" id="Ptv-Ve-QwN"/>
+                            <constraint firstItem="OKa-Pq-52T" firstAttribute="top" secondItem="MKr-Wf-xDd" secondAttribute="bottom" constant="20" id="XtO-Td-aeu"/>
+                            <constraint firstItem="ZRI-dL-Acs" firstAttribute="trailing" secondItem="qHt-9p-O5V" secondAttribute="trailingMargin" id="cdU-jO-PAB"/>
+                            <constraint firstItem="ZRI-dL-Acs" firstAttribute="leading" secondItem="qHt-9p-O5V" secondAttribute="leadingMargin" id="fus-jp-lpZ"/>
+                            <constraint firstItem="MKr-Wf-xDd" firstAttribute="top" secondItem="ZRI-dL-Acs" secondAttribute="bottom" constant="8" id="jO4-SZ-kmq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="suiteDescriptionTextView" destination="ZRI-dL-Acs" id="6nr-TA-35h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4f8-c3-7PB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2358.170914542729" y="-431.19999999999999"/>
         </scene>
         <!--Simulator View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -565,7 +683,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02_otitismedia" translatesAutoresizingMaskIntoConstraints="NO" id="Cyl-Iu-XeD"/>
@@ -622,6 +740,14 @@ here</string>
                                     <action selector="earSelectionChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dp2-FF-xqV"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjA-PO-NJO">
+                                <frame key="frameInset" minX="26" minY="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pcy-uO-WxH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -691,7 +817,7 @@ here</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209.5" y="239.5"/>
+            <point key="canvasLocation" x="1882" y="239"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="b6A-Gj-t0B">
@@ -702,7 +828,7 @@ here</string>
                         <viewControllerLayoutGuide type="bottom" id="la8-ko-ios"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Atb-EK-8rG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="02_otitismedia_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="Zbq-Ta-R1J">
@@ -782,7 +908,7 @@ here</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1p-mJ-LFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="263.5" y="794.5"/>
+            <point key="canvasLocation" x="2702" y="239"/>
         </scene>
         <!--Learn-->
         <scene sceneID="h0e-OE-TUU">
@@ -803,6 +929,24 @@ here</string>
             </objects>
             <point key="canvasLocation" x="-314" y="-2187"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7W2-sF-DOJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="S7Q-En-I8o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PSB-ZA-iFl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nqg-5a-YMY" kind="relationship" relationship="rootViewController" id="nn8-6x-Oju"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJj-8f-unk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565.60000000000002" y="-428.63568215892059"/>
+        </scene>
     </scenes>
     <resources>
         <image name="01_normal_thumb" width="2263" height="2280"/>
@@ -817,4 +961,8 @@ here</string>
         <image name="otoscope_held_drawing_white" width="375" height="201"/>
         <image name="phone_held_drawing" width="113" height="100"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KnM-gX-TWg"/>
+        <segue reference="GD3-dB-Vj7"/>
+    </inferredMetricsTieBreakers>
 </document>
