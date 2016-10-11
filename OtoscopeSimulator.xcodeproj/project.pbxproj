@@ -48,24 +48,24 @@
 
 /* Begin PBXFileReference section */
 		82716A29C3AA12927757F333 /* Pods-OtoscopeSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoscopeSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OtoscopeSimulator/Pods-OtoscopeSimulator.debug.xcconfig"; sourceTree = "<group>"; };
-		A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCellView.swift; sourceTree = "<group>"; };
-		A11D7DFB1C5E3E8D000E5106 /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
+		A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerCellView.swift; path = Views/AnswerCellView.swift; sourceTree = "<group>"; };
+		A11D7DFB1C5E3E8D000E5106 /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealViewController.swift; path = Views/RevealViewController.swift; sourceTree = "<group>"; };
 		A13370C71D9A7B7700961AD7 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandingPageViewController.swift; path = Views/LandingPageViewController.swift; sourceTree = "<group>"; };
-		A13370C91D9A804500961AD7 /* TrainingLandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingLandingPageViewController.swift; sourceTree = "<group>"; };
+		A13370C91D9A804500961AD7 /* TrainingLandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainingLandingPageViewController.swift; path = Views/TrainingLandingPageViewController.swift; sourceTree = "<group>"; };
 		A13370CB1D9C3CC700961AD7 /* LogInPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInPageViewController.swift; path = Views/LogInPageViewController.swift; sourceTree = "<group>"; };
 		A13370CD1D9C410B00961AD7 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserStore.swift; path = Services/UserStore.swift; sourceTree = "<group>"; };
 		A14FE52D1C5CD9C900C55D0F /* OtoscopeSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtoscopeSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14FE5301C5CD9C900C55D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewController.swift; sourceTree = "<group>"; };
+		A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimulatorViewController.swift; path = Views/SimulatorViewController.swift; sourceTree = "<group>"; };
 		A14FE5351C5CD9C900C55D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A14FE5371C5CD9C900C55D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14FE53A1C5CD9C900C55D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A14FE53C1C5CD9C900C55D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteOverviewViewController.swift; path = Views/SuiteOverviewViewController.swift; sourceTree = "<group>"; };
 		A164D0CC1DA255D700BC1937 /* Suite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suite.swift; path = Model/Suite.swift; sourceTree = "<group>"; };
-		A164D0CE1DA2578000BC1937 /* Suites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suites.swift; sourceTree = "<group>"; };
-		A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMember.swift; sourceTree = "<group>"; };
-		A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMemberParser.swift; sourceTree = "<group>"; };
+		A164D0CE1DA2578000BC1937 /* Suites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suites.swift; path = Model/Suites.swift; sourceTree = "<group>"; };
+		A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailChimpListMember.swift; path = Model/MailChimpListMember.swift; sourceTree = "<group>"; };
+		A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailChimpListMemberParser.swift; path = Model/MailChimpListMemberParser.swift; sourceTree = "<group>"; };
 		A184CAB21D8C1DDE002649DA /* MailChimpError.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MailChimpError.txt; sourceTree = "<group>"; };
 		A1850A4F1C78C71800D420E1 /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Model/Condition.swift; sourceTree = "<group>"; };
 		A1850A511C78CC8A00D420E1 /* Conditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conditions.swift; path = Model/Conditions.swift; sourceTree = "<group>"; };
@@ -76,9 +76,9 @@
 		A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MD5Digester.swift; path = Services/MD5Digester.swift; sourceTree = "<group>"; };
 		A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OtoscopeSimulator-Bridging-Header.h"; sourceTree = "<group>"; };
 		A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5DigesterTests.swift; sourceTree = "<group>"; };
-		A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpQuery.swift; sourceTree = "<group>"; };
-		A1FBB37B1DA6B0D600C9EBD5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		A1FBB37D1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuiteChoiceTableViewController.swift; sourceTree = "<group>"; };
+		A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailChimpQuery.swift; path = Services/MailChimpQuery.swift; sourceTree = "<group>"; };
+		A1FBB37B1DA6B0D600C9EBD5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Views/GradientView.swift; sourceTree = "<group>"; };
+		A1FBB37D1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteChoiceTableViewController.swift; path = Views/SuiteChoiceTableViewController.swift; sourceTree = "<group>"; };
 		BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtoscopeSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95510F82860CC1104432B2D /* Pods-OtoscopeSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoscopeSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-OtoscopeSimulator/Pods-OtoscopeSimulator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
