@@ -14,4 +14,5 @@ struct Condition {
     let imageName:String
     let testConditionName:[String]
     let informationText:String
+    let signs:[String]
 }
