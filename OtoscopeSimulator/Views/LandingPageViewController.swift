@@ -12,7 +12,13 @@ class LandingPageViewController: UIViewController {
 
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        self.view.isHidden = true
-//    }
+    override func viewDidLoad() {
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserStore().isUserLoggedIn() {
+            self.performSegue(withIdentifier: "SuiteChoice", sender: self)
+        }
+    }
 }

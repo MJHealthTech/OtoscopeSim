@@ -15,20 +15,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        var initialViewController = storyboard.instantiateViewController(withIdentifier: "LandingPage")
-
-        if UserStore().isUserLoggedIn() {
-            initialViewController = storyboard.instantiateViewController(withIdentifier: "TrainingLandingPage")
-        }
+        UserStore().signOut()
         
-        self.window?.rootViewController = initialViewController
-        self.window?.makeKeyAndVisible()
+        setNavigationBarAppearance()
         
         return true
+    }
+    
+    func getInitialViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var initialViewController = storyboard.instantiateViewController(withIdentifier: "LandingPage")
+        
+        if UserStore().isUserLoggedIn() {
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "SuiteChoice")
+        }
+        
+        return initialViewController
+    }
+    
+    func setNavigationBarAppearance() {
+        //        let logoBlue = UIColor(red: 3/255, green: 159/255, blue: 149/255, alpha: 1)
+        //        let logoGreen = UIColor(red: 51/255, green: 172/255, blue: 64/255, alpha: 1)
+        let defaultLightBlue = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
+        
+        UINavigationBar.appearance().barTintColor = defaultLightBlue
+        UINavigationBar.appearance().tintColor = UIColor(white: 1.0, alpha: 0.8)
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

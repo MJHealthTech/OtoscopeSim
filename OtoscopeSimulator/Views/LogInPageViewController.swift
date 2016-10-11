@@ -6,6 +6,8 @@ class LogInPageViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var progressLabel: UILabel!
     
+    var dismissAction: () -> Void = { () in }
+    
     @IBAction func cancelButtonPressed() {
         self.dismiss(animated: true, completion: nil)
     }
@@ -14,7 +16,7 @@ class LogInPageViewController: UIViewController, UITextFieldDelegate {
         emailAddressTextField.resignFirstResponder()
         attemptToLogIn()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         progressLabel.text = ""
     }
@@ -54,8 +56,8 @@ class LogInPageViewController: UIViewController, UITextFieldDelegate {
         
         progressLabel.text = "Hi \(listMember.firstName)!"
         
-        if let trainingLandingPageViewController = storyboard?.instantiateViewController(withIdentifier: "TrainingLandingPage") {
-            self.show(trainingLandingPageViewController, sender: self)
-        }
+        self.dismissAction()
+        
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -194,8 +194,12 @@ class SimulatorViewController: UIViewController {
         }
     }
     
-    @IBAction func backButtonPressed() {
-        self.navigationController?.popViewController(animated: true)
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(false, animated: false)
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
 }
 

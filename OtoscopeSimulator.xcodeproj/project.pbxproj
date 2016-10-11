@@ -21,7 +21,6 @@
 		A164D0CB1DA2511C00BC1937 /* SuiteOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */; };
 		A164D0CD1DA255D700BC1937 /* Suite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CC1DA255D700BC1937 /* Suite.swift */; };
 		A164D0CF1DA2578000BC1937 /* Suites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CE1DA2578000BC1937 /* Suites.swift */; };
-		A164D0D11DA296FA00BC1937 /* SuiteChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0D01DA296FA00BC1937 /* SuiteChoiceViewController.swift */; };
 		A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */; };
 		A184CAAF1D8ACFD9002649DA /* MailChimpListMemberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */; };
 		A184CAB31D8C1DDE002649DA /* MailChimpError.txt in Resources */ = {isa = PBXBuildFile; fileRef = A184CAB21D8C1DDE002649DA /* MailChimpError.txt */; };
@@ -31,10 +30,9 @@
 		A188DAEF1D89A3C100F29A78 /* MailChimpListEntry.txt in Resources */ = {isa = PBXBuildFile; fileRef = A188DAEE1D89A3C100F29A78 /* MailChimpListEntry.txt */; };
 		A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */; };
 		A188DAF71D8ABB9400F29A78 /* MD5DigesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */; };
-		A1B06F201D8044B100DB4F6F /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */; };
-		A1B06F221D80484600DB4F6F /* LearnDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */; };
-		A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */; };
 		A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */; };
+		A1FBB37C1DA6B0D600C9EBD5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBB37B1DA6B0D600C9EBD5 /* GradientView.swift */; };
+		A1FBB37E1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBB37D1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift */; };
 		FB4A2CA9F228452AE8ABC13A /* Pods_OtoscopeSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +64,6 @@
 		A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteOverviewViewController.swift; path = Views/SuiteOverviewViewController.swift; sourceTree = "<group>"; };
 		A164D0CC1DA255D700BC1937 /* Suite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suite.swift; path = Model/Suite.swift; sourceTree = "<group>"; };
 		A164D0CE1DA2578000BC1937 /* Suites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suites.swift; sourceTree = "<group>"; };
-		A164D0D01DA296FA00BC1937 /* SuiteChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteChoiceViewController.swift; path = Views/SuiteChoiceViewController.swift; sourceTree = "<group>"; };
 		A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMember.swift; sourceTree = "<group>"; };
 		A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMemberParser.swift; sourceTree = "<group>"; };
 		A184CAB21D8C1DDE002649DA /* MailChimpError.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MailChimpError.txt; sourceTree = "<group>"; };
@@ -79,10 +76,9 @@
 		A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MD5Digester.swift; path = Services/MD5Digester.swift; sourceTree = "<group>"; };
 		A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OtoscopeSimulator-Bridging-Header.h"; sourceTree = "<group>"; };
 		A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5DigesterTests.swift; sourceTree = "<group>"; };
-		A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
-		A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnDetailViewController.swift; sourceTree = "<group>"; };
-		A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockScreenViewController.swift; sourceTree = "<group>"; };
 		A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpQuery.swift; sourceTree = "<group>"; };
+		A1FBB37B1DA6B0D600C9EBD5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A1FBB37D1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuiteChoiceTableViewController.swift; sourceTree = "<group>"; };
 		BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtoscopeSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95510F82860CC1104432B2D /* Pods-OtoscopeSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoscopeSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-OtoscopeSimulator/Pods-OtoscopeSimulator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,14 +125,12 @@
 				A14FE5321C5CD9C900C55D0F /* SimulatorViewController.swift */,
 				A11D7DF91C5E2DC2000E5106 /* AnswerCellView.swift */,
 				A11D7DFB1C5E3E8D000E5106 /* RevealViewController.swift */,
-				A1B06F1F1D8044B100DB4F6F /* LearnTableViewController.swift */,
-				A1B06F211D80484600DB4F6F /* LearnDetailViewController.swift */,
-				A1B06F231D806CF400DB4F6F /* UnlockScreenViewController.swift */,
 				A13370C71D9A7B7700961AD7 /* LandingPageViewController.swift */,
 				A13370C91D9A804500961AD7 /* TrainingLandingPageViewController.swift */,
 				A13370CB1D9C3CC700961AD7 /* LogInPageViewController.swift */,
 				A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */,
-				A164D0D01DA296FA00BC1937 /* SuiteChoiceViewController.swift */,
+				A1FBB37B1DA6B0D600C9EBD5 /* GradientView.swift */,
+				A1FBB37D1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -378,26 +372,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FBB37C1DA6B0D600C9EBD5 /* GradientView.swift in Sources */,
 				A164D0CF1DA2578000BC1937 /* Suites.swift in Sources */,
-				A1B06F201D8044B100DB4F6F /* LearnTableViewController.swift in Sources */,
 				A164D0CD1DA255D700BC1937 /* Suite.swift in Sources */,
 				A14FE5331C5CD9C900C55D0F /* SimulatorViewController.swift in Sources */,
 				A11D7DFA1C5E2DC2000E5106 /* AnswerCellView.swift in Sources */,
 				A184CAAF1D8ACFD9002649DA /* MailChimpListMemberParser.swift in Sources */,
-				A164D0D11DA296FA00BC1937 /* SuiteChoiceViewController.swift in Sources */,
 				A14FE5311C5CD9C900C55D0F /* AppDelegate.swift in Sources */,
 				A11D7DFC1C5E3E8D000E5106 /* RevealViewController.swift in Sources */,
 				A164D0CB1DA2511C00BC1937 /* SuiteOverviewViewController.swift in Sources */,
 				A1850A501C78C71800D420E1 /* Condition.swift in Sources */,
 				A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */,
-				A1B06F241D806CF400DB4F6F /* UnlockScreenViewController.swift in Sources */,
 				A13370C81D9A7B7700961AD7 /* LandingPageViewController.swift in Sources */,
 				A13370CA1D9A804500961AD7 /* TrainingLandingPageViewController.swift in Sources */,
 				A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */,
+				A1FBB37E1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift in Sources */,
 				A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */,
 				A13370CE1D9C410B00961AD7 /* UserStore.swift in Sources */,
 				A13370CC1D9C3CC700961AD7 /* LogInPageViewController.swift in Sources */,
-				A1B06F221D80484600DB4F6F /* LearnDetailViewController.swift in Sources */,
 				A1850A521C78CC8A00D420E1 /* Conditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
