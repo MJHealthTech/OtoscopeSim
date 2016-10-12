@@ -26,7 +26,7 @@ class RevealViewController : UIViewController {
         
         conditionNameLabel.text = condition.name
         conditionDescriptionLabel.text = condition.informationText
-        conditionImage.image = UIImage(named: condition.thumbnailName)
+        conditionImage.image = condition.images.first
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {

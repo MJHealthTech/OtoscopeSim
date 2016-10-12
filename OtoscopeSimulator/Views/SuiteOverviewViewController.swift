@@ -54,7 +54,14 @@ extension SuiteOverviewViewController: UITableViewDataSource {
         let condition = suiteToDisplay.conditions[indexPath.section]
         
         if let imageCell = cell as? ConditionImageCell {
-            imageCell.conditionImageView.image = UIImage(named: condition.thumbnailName)
+            imageCell.conditionImageView.image = condition.images.first
+            if condition.images.count > 1 {
+                imageCell.conditionImageView2.image = condition.images[1]
+                imageCell.conditionImageView2.isHidden = false
+            } else {
+                imageCell.conditionImageView2.image = nil
+                imageCell.conditionImageView2.isHidden = true
+            }
         } else {
             let signIndex = indexPath.row - 1
             let sign = condition.signs[signIndex]

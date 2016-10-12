@@ -60,7 +60,7 @@ class SimulatorViewController: UIViewController {
         self.presentedCondition = self.chooseNextRandomCondition(from:conditionSet)
         self.shownConditions.append(presentedCondition.name)
 
-        self.setConditionImage(presentedCondition.imageName)
+        self.setConditionImage(presentedCondition.images)
         self.holdThumbHereLabel.isHidden = false
     }
     
@@ -82,8 +82,9 @@ class SimulatorViewController: UIViewController {
         return chosenCondition
     }
     
-    func setConditionImage(_ imageName:String) {
-        self.earImageView.image = UIImage(named: self.presentedCondition.imageName)
+    func setConditionImage(_ images:[UIImage]) {
+        let randomIndex = Int(arc4random_uniform(UInt32(images.count)))
+        self.earImageView.image = images[randomIndex]
     }
     
     func startHandlingAttitudeChanges() {

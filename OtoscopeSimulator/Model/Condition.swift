@@ -6,12 +6,11 @@
 //  Copyright © 2016 John Holcroft. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Condition {
     let name:String
-    let thumbnailName:String
-    let imageName:String
+    let images:[UIImage]
     let testConditionName:[String]
     let informationText:String
     let signs:[String]
