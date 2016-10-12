@@ -18,6 +18,7 @@
 		A14FE5361C5CD9C900C55D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5341C5CD9C900C55D0F /* Main.storyboard */; };
 		A14FE5381C5CD9C900C55D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5371C5CD9C900C55D0F /* Assets.xcassets */; };
 		A14FE53B1C5CD9C900C55D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5391C5CD9C900C55D0F /* LaunchScreen.storyboard */; };
+		A156FFD31DAE031900E7F9F5 /* ConditionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A156FFD21DAE031900E7F9F5 /* ConditionImageCell.swift */; };
 		A164D0CB1DA2511C00BC1937 /* SuiteOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */; };
 		A164D0CD1DA255D700BC1937 /* Suite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CC1DA255D700BC1937 /* Suite.swift */; };
 		A164D0CF1DA2578000BC1937 /* Suites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CE1DA2578000BC1937 /* Suites.swift */; };
@@ -61,6 +62,7 @@
 		A14FE5371C5CD9C900C55D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14FE53A1C5CD9C900C55D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A14FE53C1C5CD9C900C55D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A156FFD21DAE031900E7F9F5 /* ConditionImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConditionImageCell.swift; path = Cells/ConditionImageCell.swift; sourceTree = "<group>"; };
 		A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteOverviewViewController.swift; path = Views/SuiteOverviewViewController.swift; sourceTree = "<group>"; };
 		A164D0CC1DA255D700BC1937 /* Suite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suite.swift; path = Model/Suite.swift; sourceTree = "<group>"; };
 		A164D0CE1DA2578000BC1937 /* Suites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suites.swift; path = Model/Suites.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		A14FE52F1C5CD9C900C55D0F /* OtoscopeSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				A156FFD11DAE02F500E7F9F5 /* Cells */,
 				A188DAF01D8AB9BB00F29A78 /* Services */,
 				A1850A4E1C78C6BC00D420E1 /* Model */,
 				A14FE5301C5CD9C900C55D0F /* AppDelegate.swift */,
@@ -167,6 +170,14 @@
 				A14FE5391C5CD9C900C55D0F /* LaunchScreen.storyboard */,
 			);
 			path = OtoscopeSimulator;
+			sourceTree = "<group>";
+		};
+		A156FFD11DAE02F500E7F9F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A156FFD21DAE031900E7F9F5 /* ConditionImageCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		A184CAA91D8ACA94002649DA /* Supporting Files */ = {
@@ -385,6 +396,7 @@
 				A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */,
 				A13370C81D9A7B7700961AD7 /* LandingPageViewController.swift in Sources */,
 				A13370CA1D9A804500961AD7 /* TrainingLandingPageViewController.swift in Sources */,
+				A156FFD31DAE031900E7F9F5 /* ConditionImageCell.swift in Sources */,
 				A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */,
 				A1FBB37E1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift in Sources */,
 				A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */,

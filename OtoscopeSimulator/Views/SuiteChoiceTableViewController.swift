@@ -3,6 +3,7 @@ import UIKit
 class SuiteChoiceTableViewController: UITableViewController {
     
     @IBOutlet weak var signInButton: UIBarButtonItem!
+    @IBOutlet weak var howToSignUpLabel: UILabel!
 
     let buttonImages = [#imageLiteral(resourceName: "ButtonBlue"), #imageLiteral(resourceName: "ButtonGreen"),#imageLiteral(resourceName: "ButtonOrange"), #imageLiteral(resourceName: "ButtonPurple"), #imageLiteral(resourceName: "ButtonRed"), #imageLiteral(resourceName: "ButtonYellow")]
 
@@ -12,6 +13,7 @@ class SuiteChoiceTableViewController: UITableViewController {
             self.navigationItem.title = "Hi \(firstName)"
             
             self.navigationItem.rightBarButtonItem = nil
+            self.howToSignUpLabel.isHidden = true
         }
     }
     
