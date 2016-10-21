@@ -1,7 +1,6 @@
 import UIKit
 
 struct Conditions {
-    let commonOtitisMediaWithEffusionImages:[UIImage] = [#imageLiteral(resourceName: "common_otitis_media_with_effusion"), #imageLiteral(resourceName: "common_otitis_media_with_effusion_bubbles")]
     
     static let Normal = Condition(name: "Normal", images: [#imageLiteral(resourceName: "01_normal")], testConditionName: ["Otitis Media", "Normal", "Perforated Eardrum", "Myringosclerosis"], informationText: "This is a normal tympanic membrane. Whilst it is important to recognise pathologies, it is equally important to recognise what is normal.", signs:[])
     
@@ -33,6 +32,7 @@ struct Conditions {
     
     static let GlomusTumor = Condition(name: "Glomus Tumor", images:[#imageLiteral(resourceName: "glomus_tumour")], testConditionName: ["Acute Otitis Media", "Bullous Myringitis", "Glomus Tumour", "Haemotympanum"], informationText: "", signs: ["Localised area of pinkish coloration behind the tympanic membrane"])
     
+    static let RedTympanicMembrane = [BullousMyringitis, AcuteOtitisMedia1, Haemotympanum, Otosclerosis, GlomusTumor]
     
     //WHITE TYMPANIC MEMBRANE
     
@@ -46,45 +46,30 @@ struct Conditions {
     
     static let OtomycosisCandidal = Condition(name: "Otomycosis (Candidal)", images:[#imageLiteral(resourceName: "otomycosis")], testConditionName: ["Tympanosclerosis", "Congenital Cholesteatoma", "Osteoma", "Otomycosis"], informationText: "", signs: ["Patchy white found on ear canal and sometimes the tympanic membrane"])
     
+    static let WhiteTympanicMembrane = [Tympanosclerosis, CongenitalCholesteatoma, Osteoma, Grommet1, OtomycosisCandidal]
+    
     //COMMON
     
-    static let AcuteOtitisMedia2 = Condition(name: "Acute Otitis Media", images:[#imageLiteral(resourceName: "common_otitis_media")], testConditionName: ["Acute Otitis Media", "Bullous Myringitis", "Glomus Tumour", "Haemotympanum"], informationText: "Acute otitis media is an infection of the middle ear. Typically characterised by a bulging tympanic membrane.", signs: ["Bulging of the tympanic membrane", "Increased vascularity / hyperaemia"])
+    static let AcuteOtitisMedia2 = Condition(name: "Acute Otitis Media", images:[#imageLiteral(resourceName: "common_otitis_media"), #imageLiteral(resourceName: "acute_otitis_media")], testConditionName: ["Acute Otitis Media", "Bullous Myringitis", "Glomus Tumour", "Haemotympanum"], informationText: "Acute otitis media is an infection of the middle ear. Typically characterised by a bulging tympanic membrane.", signs: ["Bulging of the tympanic membrane", "Increased vascularity / hyperaemia"])
     
     static let OtitisMediaWithEffusion = Condition(name: "Otitis media with effusion", images:[#imageLiteral(resourceName: "otitis_media_with_effusion"), #imageLiteral(resourceName: "common_otitis_media_with_effusion_bubbles")], testConditionName: ["Acute otitis media", "Haemotympanum", "Ottic barotrauma", "Otitis media with effusion"], informationText: "Otitis media with effusion is a very common condition in which the mucosal lining of the middle ear secretes fluid which may occur as a result of eustachian tube dysfunction. The condition is also known as ‘Glue Ear’.", signs: ["Discolored tympanic membrane (can be amber, blue or yellow", "Retraction of the tympanic membrane (If mild the annulus will look more prominent)", "Air fluid level or bubbles behind the tympanic membrane"])
     
     static let OtitisExterna = Condition(name: "Otitis Externa", images:[#imageLiteral(resourceName: "common_otitis_externa")], testConditionName: ["Acute Otitis Media", "Bullous Myringitis", "Glomus Tumour", "Haemotympanum"], informationText: "", signs: ["Ear canal red and oedematous", "Tympanic membrane sometimes not visible due to swelling"])
     
-    static let TympanicMembranePerforation = Condition(name: "Tympanic Membrane Perforation", images:[#imageLiteral(resourceName: "common_tm_perforation")], testConditionName: ["Myringosclerosis", "Tympanic Membrane Perforation", "Haemotympanum", "Foreign Body"], informationText: "Tympanic membrane perforations can be caused by direct penetrating injury or from barotrauma - a sudden change in pressure.", signs: ["Perforation", "Blood suggests trauma"])
+    static let TympanicMembranePerforation = Condition(name: "Tympanic Membrane Perforation", images:[#imageLiteral(resourceName: "common_tm_perforation"), #imageLiteral(resourceName: "04_perforation_thumb")], testConditionName: ["Myringosclerosis", "Tympanic Membrane Perforation", "Haemotympanum", "Foreign Body"], informationText: "Tympanic membrane perforations can be caused by direct penetrating injury or from barotrauma - a sudden change in pressure.", signs: ["Perforation", "Blood suggests trauma"])
     
     static let Grommet2 = Condition(name: "Grommet", images:[#imageLiteral(resourceName: "grommet")], testConditionName: ["Tympanosclerosis", "Congenital Cholesteatoma", "Osteoma", "Otomycosis"], informationText: "", signs: ["Grommet is usually placed antero-inferiorly"])
+    
+    static let Common = [AcuteOtitisMedia2, OtitisMediaWithEffusion, OtitisExterna, TympanicMembranePerforation, Grommet2]
     
     //EMERGENCY
     
     static let AcquiredCholesteatoma = Condition(name: "Acquired Cholesteatoma", images:[#imageLiteral(resourceName: "acquired_cholesteatoma")], testConditionName: ["Acquired Cholesteatoma", "Congenital Cholesteatoma", "Malignant Otitis Externa", "Attic Retraction Pocket"], informationText: "", signs: ["Debris or keratin plug see in the attic (superior portion of the tympanic membrane"])
     
-    static let MalignantOtitisExterna1 = Condition(name: "Malignant Otitis Externa", images:[#imageLiteral(resourceName: "malignant_oe")], testConditionName: ["Acquired Cholesteatoma", "Congenital Cholesteatoma", "Malignant Otitis Externa", "Attic Retraction Pocket"], informationText: "", signs: ["Ear canal red and oedematous", "Granulation tissue"])
+    static let MalignantOtitisExterna = Condition(name: "Malignant Otitis Externa", images:[#imageLiteral(resourceName: "malignant_oe"), #imageLiteral(resourceName: "malignant_oe2")], testConditionName: ["Acquired Cholesteatoma", "Congenital Cholesteatoma", "Malignant Otitis Externa", "Attic Retraction Pocket"], informationText: "", signs: ["Ear canal red and oedematous", "Granulation tissue"])
     
-    static let MalignantOtitisExterna2 = Condition(name: "Malignant Otitis Externa", images:[#imageLiteral(resourceName: "malignant_oe2")], testConditionName: ["Acquired Cholesteatoma", "Congenital Cholesteatoma", "Malignant Otitis Externa", "Attic Retraction Pocket"], informationText: "", signs: ["Ear canal red and oedematous", "Granulation tissue"])
+    static let AtticRetraction = Condition(name: "Attic Retraction", images:[#imageLiteral(resourceName: "tympanosclerosis_retraction_pocket"), #imageLiteral(resourceName: "attic_retraction")], testConditionName: ["Acquired Cholesteatoma", "Congenital Cholesteatoma", "Malignant Otitis Externa", "Attic Retraction Pocket"], informationText: "", signs: ["Retraction pocket in attic (superior area of the tympanic membrane / pars flaccida)"])
     
-    static let AtticRetraction1 = Condition(name: "Attic Retraction", images:[#imageLiteral(resourceName: "tympanosclerosis_retraction_pocket")], testConditionName: ["Acquired Cholesteatoma", "Congenital Cholesteatoma", "Malignant Otitis Externa", "Attic Retraction Pocket"], informationText: "", signs: ["Retraction pocket in attic (superior area of the tympanic membrane / pars flaccida)"])
-    
-    static let AtticRetraction2 = Condition(name: "Attic Retraction", images:[#imageLiteral(resourceName: "attic_retraction")], testConditionName: ["Acquired Cholesteatoma", "Congenital Cholesteatoma", "Malignant Otitis Externa", "Attic Retraction Pocket"], informationText: "", signs: ["Retraction pocket in attic (superior area of the tympanic membrane / pars flaccida)"])
+    static let Emergency = [AcquiredCholesteatoma, MalignantOtitisExterna, AtticRetraction]
 
-//    
-//    static let TestSet = [Normal, AcuteOtitisMedia, Haemotympanum, TympanicMembranePerforation, Myringosclerosis, OtitisMediaWithEffusion, ForeignBodyInsect]
-//    
-//    static let FreeConditions = [Normal, AcuteOtitisMedia, Haemotympanum]
-//    
-//    static var IsExtraContentUnlocked = false
-//    
-//    static func IsLocked(_ condition:Condition) -> Bool {
-//        if IsExtraContentUnlocked {
-//            return false
-//        } else {
-//            return !FreeConditions.contains { (testCondition) -> Bool in
-//                return testCondition.name == condition.name
-//            }
-//        }
-//        
-//    }
 }

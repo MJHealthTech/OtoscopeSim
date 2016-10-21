@@ -103,21 +103,41 @@ class SimulatorViewController: UIViewController {
             let rollValue = !isUpsideDown ? deviceMotion.attitude.roll : -deviceMotion.attitude.roll
             let pitchValue = !isUpsideDown ? deviceMotion.attitude.pitch : -deviceMotion.attitude.pitch
 
-            sSelf.yCentreConstraint.constant = sSelf.attitudeValueToConstraintValue(rollValue, centreValue: M_PI_2)
-            sSelf.xCentreConstraint.constant = sSelf.startXCentreConstraintConstant + sSelf.attitudeValueToConstraintValue(deviceMotion.attitude.yaw, centreValue: sSelf.centreYawValue!)
+            let yConstraintProportion = sSelf.attitudeValueToProportion(rollValue, centreValue: M_PI_2)
+            let xConstraintProportion = sSelf.attitudeValueToProportion(deviceMotion.attitude.yaw, centreValue: sSelf.centreYawValue!)
+
+            let scalingFactor = sSelf.constrainToCircle(xProportion: xConstraintProportion, yProportion: yConstraintProportion)
+
+            let yConstraint = sSelf.proportionToConstraintValue(yConstraintProportion * scalingFactor)
+            let xConstraint = sSelf.proportionToConstraintValue(xConstraintProportion * scalingFactor)
+            
+            sSelf.yCentreConstraint.constant = yConstraint
+            sSelf.xCentreConstraint.constant = sSelf.startXCentreConstraintConstant + xConstraint
             sSelf.earImageView.transform = CGAffineTransform(rotationAngle: CGFloat(pitchValue))
         }
     }
     
-    func attitudeValueToConstraintValue(_ currentValue:Double, centreValue:Double) -> CGFloat {
+    func constrainToCircle(xProportion: Double, yProportion: Double) -> Double {
+        let a2b2 = (xProportion * xProportion) + (yProportion * yProportion)
+        let maxC2:Double = 1
+        
+        print("x: \(xProportion), y:\(yProportion)")
+        if a2b2 > maxC2 {
+            return 1 / sqrt(a2b2 / maxC2)
+        } else {
+            return 1
+        }
+    }
+    
+    func attitudeValueToProportion(_ currentValue:Double, centreValue:Double) -> Double {
         let minValue = centreValue - 0.3
         let maxValue = centreValue + 0.3
         
-        guard currentValue > minValue else { return proportionToConstraintValue(1) }
-        guard currentValue < maxValue else { return proportionToConstraintValue(0) }
+        guard currentValue > minValue else { return 1 }
+        guard currentValue < maxValue else { return 0 }
 
         let proportion = (maxValue - currentValue) / (maxValue - minValue)
-        return proportionToConstraintValue(proportion)
+        return proportion
     }
     
     func proportionToConstraintValue(_ proportion:Double) -> CGFloat {
