@@ -505,8 +505,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-Wf-xDd">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Start Simulation"/>
+                                <state key="normal" title=" Start Simulation ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="GD3-dB-Vj7"/>
                                 </connections>
@@ -592,9 +595,8 @@
                         <constraints>
                             <constraint firstItem="MKr-Wf-xDd" firstAttribute="top" secondItem="AUy-mu-mW2" secondAttribute="bottom" constant="8" id="Acf-4r-cgW"/>
                             <constraint firstItem="ZRI-dL-Acs" firstAttribute="top" secondItem="qHt-9p-O5V" secondAttribute="topMargin" id="IoR-yU-EuL"/>
-                            <constraint firstItem="MKr-Wf-xDd" firstAttribute="trailing" secondItem="qHt-9p-O5V" secondAttribute="trailingMargin" id="L34-Ge-fmO"/>
+                            <constraint firstItem="MKr-Wf-xDd" firstAttribute="centerX" secondItem="qHt-9p-O5V" secondAttribute="centerX" id="Jjt-nU-E3e"/>
                             <constraint firstItem="AUy-mu-mW2" firstAttribute="top" secondItem="W5T-sw-VZQ" secondAttribute="bottom" id="Pfs-18-aIF"/>
-                            <constraint firstItem="MKr-Wf-xDd" firstAttribute="leading" secondItem="qHt-9p-O5V" secondAttribute="leadingMargin" id="Ptv-Ve-QwN"/>
                             <constraint firstItem="AUy-mu-mW2" firstAttribute="leading" secondItem="qHt-9p-O5V" secondAttribute="leading" id="Vkf-Yj-La4"/>
                             <constraint firstItem="OKa-Pq-52T" firstAttribute="top" secondItem="MKr-Wf-xDd" secondAttribute="bottom" constant="20" id="XtO-Td-aeu"/>
                             <constraint firstItem="ZRI-dL-Acs" firstAttribute="trailing" secondItem="qHt-9p-O5V" secondAttribute="trailingMargin" id="cdU-jO-PAB"/>
@@ -604,6 +606,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="startSimulationButton" destination="MKr-Wf-xDd" id="NpJ-og-Wls"/>
                         <outlet property="suiteDescriptionTextView" destination="ZRI-dL-Acs" id="6nr-TA-35h"/>
                         <outlet property="suiteNameLabel" destination="onl-Rj-Ne5" id="4rw-rx-3uT"/>
                         <outlet property="tableView" destination="AUy-mu-mW2" id="gTc-aP-U0q"/>

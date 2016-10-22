@@ -164,6 +164,7 @@ class SimulatorViewController: UIViewController {
         guard let revealViewController = self.storyboard?.instantiateViewController(withIdentifier: "RevealViewController") as? RevealViewController else { return }
 
         revealViewController.condition = self.presentedCondition
+        revealViewController.imageToDisplay = self.earImageView.image
         
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         

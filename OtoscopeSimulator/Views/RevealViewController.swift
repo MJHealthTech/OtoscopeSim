@@ -11,6 +11,7 @@ import UIKit
 class RevealViewController : UIViewController {
     var isRightAnswer = true
     var condition:Condition!
+    var imageToDisplay: UIImage?
     
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var conditionNameLabel: UILabel!
@@ -26,7 +27,7 @@ class RevealViewController : UIViewController {
         
         conditionNameLabel.text = condition.name
         conditionDescriptionLabel.text = condition.informationText
-        conditionImage.image = condition.images.first
+        conditionImage.image = imageToDisplay
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {

@@ -7,14 +7,16 @@ class SuiteOverviewViewController: UIViewController {
     @IBOutlet weak var suiteDescriptionTextView: UITextView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var suiteNameLabel: UILabel!
+    @IBOutlet weak var startSimulationButton: UIButton!
     
     override func viewDidLoad() {
-//        self.navigationItem.title = suiteToDisplay.name
         suiteDescriptionTextView.attributedText = suiteToDisplay.attributedDescription
         
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 166
         self.suiteNameLabel.text = suiteToDisplay.name
+        
+        startSimulationButton.layer.cornerRadius = 8.0
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -22,7 +24,14 @@ class SuiteOverviewViewController: UIViewController {
         
         simulatorViewController.conditionSet = suiteToDisplay.conditions
     }
-    
+//    
+//    override func viewDidAppear(_ animated: Bool) {
+//        UIView.animate(withDuration: 0.3, delay: 1.0, options: [.autoreverse, /*.repeat*/], animations: {
+//            self.startSimulationButton.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+//        }) { (Bool) in
+//            self.startSimulationButton.transform = .identity
+//        }
+//    }
 
 }
 
