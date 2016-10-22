@@ -106,26 +106,12 @@ class SimulatorViewController: UIViewController {
             let yConstraintProportion = sSelf.attitudeValueToProportion(rollValue, centreValue: M_PI_2)
             let xConstraintProportion = sSelf.attitudeValueToProportion(deviceMotion.attitude.yaw, centreValue: sSelf.centreYawValue!)
 
-            let scalingFactor = sSelf.constrainToCircle(xProportion: xConstraintProportion, yProportion: yConstraintProportion)
-
-            let yConstraint = sSelf.proportionToConstraintValue(yConstraintProportion * scalingFactor)
-            let xConstraint = sSelf.proportionToConstraintValue(xConstraintProportion * scalingFactor)
+            let yConstraint = sSelf.proportionToConstraintValue(yConstraintProportion)
+            let xConstraint = sSelf.proportionToConstraintValue(xConstraintProportion)
             
             sSelf.yCentreConstraint.constant = yConstraint
             sSelf.xCentreConstraint.constant = sSelf.startXCentreConstraintConstant + xConstraint
             sSelf.earImageView.transform = CGAffineTransform(rotationAngle: CGFloat(pitchValue))
-        }
-    }
-    
-    func constrainToCircle(xProportion: Double, yProportion: Double) -> Double {
-        let a2b2 = (xProportion * xProportion) + (yProportion * yProportion)
-        let maxC2:Double = 1
-        
-        print("x: \(xProportion), y:\(yProportion)")
-        if a2b2 > maxC2 {
-            return 1 / sqrt(a2b2 / maxC2)
-        } else {
-            return 1
         }
     }
     
