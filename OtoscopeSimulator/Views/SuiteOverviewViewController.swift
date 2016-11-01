@@ -19,6 +19,15 @@ class SuiteOverviewViewController: UIViewController {
         startSimulationButton.layer.cornerRadius = 8.0
     }
     
+    func reportAnalytics() {
+        guard let tracker = GAI.sharedInstance().defaultTracker,
+            let builder = GAIDictionaryBuilder.createScreenView()
+            else { return }
+        
+        tracker.set(kGAIScreenName, value: suiteToDisplay.name)
+        tracker.send(builder.build() as [NSObject : AnyObject])
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let simulatorViewController = segue.destination as? SimulatorViewController else { return }
         

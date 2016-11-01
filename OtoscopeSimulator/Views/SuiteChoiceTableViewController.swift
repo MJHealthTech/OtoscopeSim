@@ -3,17 +3,17 @@ import UIKit
 class SuiteChoiceTableViewController: UITableViewController {
     
     @IBOutlet weak var signInButton: UIBarButtonItem!
-    @IBOutlet weak var howToSignUpLabel: UILabel!
 
     let buttonImages = [#imageLiteral(resourceName: "ButtonBlue"), #imageLiteral(resourceName: "ButtonGreen"),#imageLiteral(resourceName: "ButtonOrange"), #imageLiteral(resourceName: "ButtonPurple"), #imageLiteral(resourceName: "ButtonRed"), #imageLiteral(resourceName: "ButtonYellow")]
 
     override func viewWillAppear(_ animated: Bool) {
+        
         if UserStore().isUserLoggedIn() {
             guard let firstName = UserStore().getLoggedInUser()?.firstName else { return }
             self.navigationItem.title = "Hi \(firstName)"
             
             self.navigationItem.rightBarButtonItem = nil
-            self.howToSignUpLabel.isHidden = true
+            self.navigationItem.hidesBackButton = true
         }
     }
     

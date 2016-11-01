@@ -18,10 +18,21 @@
 		A14FE5361C5CD9C900C55D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5341C5CD9C900C55D0F /* Main.storyboard */; };
 		A14FE5381C5CD9C900C55D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5371C5CD9C900C55D0F /* Assets.xcassets */; };
 		A14FE53B1C5CD9C900C55D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14FE5391C5CD9C900C55D0F /* LaunchScreen.storyboard */; };
+		A15444571DC0F19E00B3EE31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A15444561DC0F19E00B3EE31 /* GoogleService-Info.plist */; };
+		A15444621DC1F62600B3EE31 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A154445E1DC1F62600B3EE31 /* Bolts.framework */; };
+		A15444631DC1F62600B3EE31 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A154445F1DC1F62600B3EE31 /* FBSDKCoreKit.framework */; };
+		A15444641DC1F62600B3EE31 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15444601DC1F62600B3EE31 /* FBSDKLoginKit.framework */; };
+		A15444651DC1F62600B3EE31 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15444611DC1F62600B3EE31 /* FBSDKShareKit.framework */; };
 		A156FFD31DAE031900E7F9F5 /* ConditionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A156FFD21DAE031900E7F9F5 /* ConditionImageCell.swift */; };
 		A164D0CB1DA2511C00BC1937 /* SuiteOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */; };
 		A164D0CD1DA255D700BC1937 /* Suite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CC1DA255D700BC1937 /* Suite.swift */; };
 		A164D0CF1DA2578000BC1937 /* Suites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164D0CE1DA2578000BC1937 /* Suites.swift */; };
+		A17649341DC7A296001C63E8 /* MailChimpListMemberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17649331DC7A296001C63E8 /* MailChimpListMemberTests.swift */; };
+		A17649351DC7D09D001C63E8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A154445F1DC1F62600B3EE31 /* FBSDKCoreKit.framework */; };
+		A17649361DC7D0A3001C63E8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15444601DC1F62600B3EE31 /* FBSDKLoginKit.framework */; };
+		A17649371DC7D0A3001C63E8 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15444611DC1F62600B3EE31 /* FBSDKShareKit.framework */; };
+		A17649381DC7D0A7001C63E8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A154445E1DC1F62600B3EE31 /* Bolts.framework */; };
+		A17649391DC7D0B6001C63E8 /* Pods_OtoscopeSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */; };
 		A184CAAD1D8ACFAC002649DA /* MailChimpListMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */; };
 		A184CAAF1D8ACFD9002649DA /* MailChimpListMemberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */; };
 		A184CAB31D8C1DDE002649DA /* MailChimpError.txt in Resources */ = {isa = PBXBuildFile; fileRef = A184CAB21D8C1DDE002649DA /* MailChimpError.txt */; };
@@ -31,7 +42,7 @@
 		A188DAEF1D89A3C100F29A78 /* MailChimpListEntry.txt in Resources */ = {isa = PBXBuildFile; fileRef = A188DAEE1D89A3C100F29A78 /* MailChimpListEntry.txt */; };
 		A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */; };
 		A188DAF71D8ABB9400F29A78 /* MD5DigesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */; };
-		A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */; };
+		A1E994AF1D9489BF00C920E6 /* MailChimp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E994AE1D9489BF00C920E6 /* MailChimp.swift */; };
 		A1FBB37C1DA6B0D600C9EBD5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBB37B1DA6B0D600C9EBD5 /* GradientView.swift */; };
 		A1FBB37E1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBB37D1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift */; };
 		FB4A2CA9F228452AE8ABC13A /* Pods_OtoscopeSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */; };
@@ -62,10 +73,19 @@
 		A14FE5371C5CD9C900C55D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14FE53A1C5CD9C900C55D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A14FE53C1C5CD9C900C55D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15444561DC0F19E00B3EE31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A15444581DC1062900B3EE31 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		A154445A1DC1063900B3EE31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A154445E1DC1F62600B3EE31 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = OtoscopeSimulator/Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		A154445F1DC1F62600B3EE31 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = OtoscopeSimulator/Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A15444601DC1F62600B3EE31 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = OtoscopeSimulator/Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A15444611DC1F62600B3EE31 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = OtoscopeSimulator/Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A15444661DC21C1C00B3EE31 /* OtoscopeSimulator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OtoscopeSimulator.entitlements; sourceTree = "<group>"; };
 		A156FFD21DAE031900E7F9F5 /* ConditionImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConditionImageCell.swift; path = Cells/ConditionImageCell.swift; sourceTree = "<group>"; };
 		A164D0CA1DA2511C00BC1937 /* SuiteOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteOverviewViewController.swift; path = Views/SuiteOverviewViewController.swift; sourceTree = "<group>"; };
 		A164D0CC1DA255D700BC1937 /* Suite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suite.swift; path = Model/Suite.swift; sourceTree = "<group>"; };
 		A164D0CE1DA2578000BC1937 /* Suites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suites.swift; path = Model/Suites.swift; sourceTree = "<group>"; };
+		A17649331DC7A296001C63E8 /* MailChimpListMemberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpListMemberTests.swift; sourceTree = "<group>"; };
 		A184CAAC1D8ACFAC002649DA /* MailChimpListMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailChimpListMember.swift; path = Model/MailChimpListMember.swift; sourceTree = "<group>"; };
 		A184CAAE1D8ACFD9002649DA /* MailChimpListMemberParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailChimpListMemberParser.swift; path = Model/MailChimpListMemberParser.swift; sourceTree = "<group>"; };
 		A184CAB21D8C1DDE002649DA /* MailChimpError.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MailChimpError.txt; sourceTree = "<group>"; };
@@ -78,7 +98,7 @@
 		A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MD5Digester.swift; path = Services/MD5Digester.swift; sourceTree = "<group>"; };
 		A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OtoscopeSimulator-Bridging-Header.h"; sourceTree = "<group>"; };
 		A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5DigesterTests.swift; sourceTree = "<group>"; };
-		A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailChimpQuery.swift; path = Services/MailChimpQuery.swift; sourceTree = "<group>"; };
+		A1E994AE1D9489BF00C920E6 /* MailChimp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailChimp.swift; path = Services/MailChimp.swift; sourceTree = "<group>"; };
 		A1FBB37B1DA6B0D600C9EBD5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Views/GradientView.swift; sourceTree = "<group>"; };
 		A1FBB37D1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuiteChoiceTableViewController.swift; path = Views/SuiteChoiceTableViewController.swift; sourceTree = "<group>"; };
 		BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtoscopeSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +111,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4A2CA9F228452AE8ABC13A /* Pods_OtoscopeSimulator.framework in Frameworks */,
+				A15444631DC1F62600B3EE31 /* FBSDKCoreKit.framework in Frameworks */,
+				A15444651DC1F62600B3EE31 /* FBSDKShareKit.framework in Frameworks */,
+				A15444641DC1F62600B3EE31 /* FBSDKLoginKit.framework in Frameworks */,
+				A15444621DC1F62600B3EE31 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17649361DC7D0A3001C63E8 /* FBSDKLoginKit.framework in Frameworks */,
+				A17649391DC7D0B6001C63E8 /* Pods_OtoscopeSimulator.framework in Frameworks */,
+				A17649351DC7D09D001C63E8 /* FBSDKCoreKit.framework in Frameworks */,
+				A17649371DC7D0A3001C63E8 /* FBSDKShareKit.framework in Frameworks */,
+				A17649381DC7D0A7001C63E8 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +145,12 @@
 		67B078268A961A8D437CD647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A154445E1DC1F62600B3EE31 /* Bolts.framework */,
+				A154445F1DC1F62600B3EE31 /* FBSDKCoreKit.framework */,
+				A15444601DC1F62600B3EE31 /* FBSDKLoginKit.framework */,
+				A15444611DC1F62600B3EE31 /* FBSDKShareKit.framework */,
+				A154445A1DC1063900B3EE31 /* SystemConfiguration.framework */,
+				A15444581DC1062900B3EE31 /* SafariServices.framework */,
 				BA422813E12DD661B933324A /* Pods_OtoscopeSimulator.framework */,
 			);
 			name = Frameworks;
@@ -160,6 +195,7 @@
 		A14FE52F1C5CD9C900C55D0F /* OtoscopeSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				A15444661DC21C1C00B3EE31 /* OtoscopeSimulator.entitlements */,
 				A156FFD11DAE02F500E7F9F5 /* Cells */,
 				A188DAF01D8AB9BB00F29A78 /* Services */,
 				A1850A4E1C78C6BC00D420E1 /* Model */,
@@ -183,6 +219,8 @@
 		A184CAA91D8ACA94002649DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */,
+				A15444561DC0F19E00B3EE31 /* GoogleService-Info.plist */,
 				A14FE5371C5CD9C900C55D0F /* Assets.xcassets */,
 				A14FE53C1C5CD9C900C55D0F /* Info.plist */,
 			);
@@ -210,6 +248,7 @@
 				A188DAEE1D89A3C100F29A78 /* MailChimpListEntry.txt */,
 				A188DAF61D8ABB9400F29A78 /* MD5DigesterTests.swift */,
 				A184CAB21D8C1DDE002649DA /* MailChimpError.txt */,
+				A17649331DC7A296001C63E8 /* MailChimpListMemberTests.swift */,
 			);
 			path = OtoscopeSimulatorTests;
 			sourceTree = "<group>";
@@ -218,8 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				A188DAF11D8AB9E000F29A78 /* MD5Digester.swift */,
-				A188DAF31D8ABA3000F29A78 /* OtoscopeSimulator-Bridging-Header.h */,
-				A1E994AE1D9489BF00C920E6 /* MailChimpQuery.swift */,
+				A1E994AE1D9489BF00C920E6 /* MailChimp.swift */,
 				A13370CD1D9C410B00961AD7 /* UserStore.swift */,
 			);
 			name = Services;
@@ -280,6 +318,11 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 32N726GGBJ;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					A188DADF1D8968B800F29A78 = {
 						CreatedOnToolsVersion = 8.0;
@@ -314,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A14FE53B1C5CD9C900C55D0F /* LaunchScreen.storyboard in Resources */,
+				A15444571DC0F19E00B3EE31 /* GoogleService-Info.plist in Resources */,
 				A14FE5381C5CD9C900C55D0F /* Assets.xcassets in Resources */,
 				A14FE5361C5CD9C900C55D0F /* Main.storyboard in Resources */,
 			);
@@ -397,7 +441,7 @@
 				A13370C81D9A7B7700961AD7 /* LandingPageViewController.swift in Sources */,
 				A13370CA1D9A804500961AD7 /* TrainingLandingPageViewController.swift in Sources */,
 				A156FFD31DAE031900E7F9F5 /* ConditionImageCell.swift in Sources */,
-				A1E994AF1D9489BF00C920E6 /* MailChimpQuery.swift in Sources */,
+				A1E994AF1D9489BF00C920E6 /* MailChimp.swift in Sources */,
 				A1FBB37E1DA6B2FA00C9EBD5 /* SuiteChoiceTableViewController.swift in Sources */,
 				A188DAF21D8AB9E000F29A78 /* MD5Digester.swift in Sources */,
 				A13370CE1D9C410B00961AD7 /* UserStore.swift in Sources */,
@@ -410,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17649341DC7A296001C63E8 /* MailChimpListMemberTests.swift in Sources */,
 				A188DAEB1D89691E00F29A78 /* MailChimpListMemberParserTests.swift in Sources */,
 				A188DAF71D8ABB9400F29A78 /* MD5DigesterTests.swift in Sources */,
 			);
@@ -540,8 +585,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OtoscopeSimulator/OtoscopeSimulator.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OtoscopeSimulator/Frameworks",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/OtoscopeSimulator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.montreux.otoscope-simulator";
@@ -561,8 +611,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OtoscopeSimulator/OtoscopeSimulator.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OtoscopeSimulator/Frameworks",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/OtoscopeSimulator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.montreux.otoscope-simulator";
@@ -576,11 +631,16 @@
 		};
 		A188DAE71D8968B800F29A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82716A29C3AA12927757F333 /* Pods-OtoscopeSimulator.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OtoscopeSimulator/Frameworks",
+				);
 				INFOPLIST_FILE = OtoscopeSimulatorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -594,11 +654,16 @@
 		};
 		A188DAE81D8968B800F29A78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95510F82860CC1104432B2D /* Pods-OtoscopeSimulator.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OtoscopeSimulator/Frameworks",
+				);
 				INFOPLIST_FILE = OtoscopeSimulatorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

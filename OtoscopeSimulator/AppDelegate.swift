@@ -16,12 +16,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-//        UserStore().signOut()
+        UserStore().signOut()
+
+        if !_isDebugAssertConfiguration() {
+            setupAnalytics()
+        }
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         setNavigationBarAppearance()
         
         return true
     }
+    
+    func setupAnalytics() {
+        // Configure tracker from GoogleService-Info.plist.
+        var configureError:NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        
+        // Optional: configure GAI options.
+        if let gai = GAI.sharedInstance() {
+            gai.trackUncaughtExceptions = true  // report uncaught exceptions
+        }
+    }
+
     
     func getInitialViewController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -62,12 +81,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let facebookOpenResult = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
+        let googleOpenResult = GIDSignIn.sharedInstance().handle(url,
+                                                                 sourceApplication: options[.sourceApplication] as? String,
+                                                                 annotation: options[.annotation])
+        return facebookOpenResult || googleOpenResult
+    }
 }
 

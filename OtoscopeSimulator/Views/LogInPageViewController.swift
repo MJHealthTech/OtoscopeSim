@@ -2,9 +2,12 @@ import UIKit
 
 class LogInPageViewController: UIViewController, UITextFieldDelegate {
     
-    let mailChimpListQuery = MailChimpQuery()
+    let mailChimp = MailChimp()
+    var isAccountCreation:Bool = false
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var createAccountButton: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
     
     var dismissAction: () -> Void = { () in }
     
@@ -17,8 +20,16 @@ class LogInPageViewController: UIViewController, UITextFieldDelegate {
         attemptToLogIn()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    @IBAction func createAccountButtonPressed() {
+        emailAddressTextField.resignFirstResponder()
+        attemptToSignUp()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         progressLabel.text = ""
+        
+        logInButton.isHidden = isAccountCreation
+        createAccountButton.isHidden = !isAccountCreation
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -36,13 +47,30 @@ class LogInPageViewController: UIViewController, UITextFieldDelegate {
         
         progressLabel.text = "Searching..."
         
-        mailChimpListQuery.getUser(withEmail: emailAddress) { (mailChimpListMember:MailChimpListMember?) in
+        mailChimp.getUser(withEmail: emailAddress) { (mailChimpListMember:MailChimpListMember?) in
             DispatchQueue.main.async {
                 if let listMember = mailChimpListMember {
                     self.setUpForValidUser(listMember: listMember)
                 } else {
                     self.emailAddressNotFound()
                 }
+            }
+        }
+    }
+    
+    func attemptToSignUp() {
+
+        guard let emailAddress = emailAddressTextField.text else { return }
+        
+        progressLabel.text = "Creating..."
+
+        let newListMember = MailChimpListMember(emailAddress: emailAddress, firstName: "", lastName: "")
+
+        mailChimp.addUser(mailChimpListMember: newListMember) { [weak self] (didSucceed:Bool) in
+            if didSucceed {
+                self?.setUpForValidUser(listMember: newListMember)
+            } else {
+                self?.progressLabel.text = "Unable to create account"
             }
         }
     }

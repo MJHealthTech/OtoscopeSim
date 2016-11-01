@@ -12,4 +12,24 @@ struct MailChimpListMember {
     let emailAddress: String
     let firstName: String
     let lastName: String
+    
+    func toJsonData() -> Data {
+        /*
+         {
+         "email_address": "urist.mcvankab@freddiesjokes.com",
+         "status": "subscribed",
+         "merge_fields": {
+         "FNAME": "Urist",
+         "LNAME": "McVankab"
+         }
+         }
+
+ */
+        let listMemberJson = ["email_address": emailAddress, "status": "subscribed",
+                              "merge_fields": ["FIRSTNAME":firstName, "LASTNAME":lastName]] as [String : Any]
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: listMemberJson, options: [])
+        
+        return jsonData
+    }
 }
